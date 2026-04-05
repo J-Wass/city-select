@@ -1,0 +1,28 @@
+id,label,description,level,livingWeight,visitingWeight,rankable
+corruption,Low Corruption,Low levels of government corruption,country,8,3,true
+pressFreedom,Press Freedom,Freedom of press and media,country,7,2,true
+costOfLiving,Low Cost of Living,Affordable daily expenses,city,9,6,true
+affordability,Affordability,Affordable housing and long-term costs,city,10,2,true
+transitQuality,Transit Quality,Public transportation quality and coverage,city,7,9,true
+climateAction,Climate Action,Government climate policies and progress,country,6,1,false
+govProgressiveness,Gov Progressiveness,Progressive governance and social policies,country,7,2,false
+militarySpending,Low Mil. Spending,Low military spending as % of GDP,country,4,1,false
+economicOutlook,Economic Outlook,Economic growth and stability outlook,country,7,1,true
+fossilFuelReliance,Low Fossil Fuels,Low dependence on fossil fuels,country,5,1,false
+safety,Safety,Personal safety and low crime rates,city,9,8,true
+healthcareQuality,Healthcare Quality,Quality and accessibility of healthcare,country,9,4,true
+educationQuality,Education Quality,Quality of educational institutions,country,8,1,true
+culturalOfferings,Cultural Offerings,"Museums, theaters, arts, and cultural events",city,6,9,true
+walkability,Walkability,Pedestrian-friendly and walkable areas,city,7,9,true
+internetQuality,Internet Quality,Internet speed and reliability,city,7,4,true
+airQuality,Air Quality,Clean air and low pollution,city,7,5,true
+foodScene,Food Scene,"Restaurant variety, street food, culinary culture",city,5,9,true
+nightlife,Nightlife,"Bars, clubs, and evening entertainment",city,4,8,true
+naturalBeauty,Natural Beauty,"Access to nature, parks, scenic landscapes",city,6,8,true
+jobMarket,Job Market,Employment opportunities and job availability,city,9,0,true
+languageAccess,Language Access,English proficiency and multilingual accessibility,city,6,7,true
+visaEase,Visa Ease,Ease of obtaining visa or residency,country,8,7,true
+sunshine,Sunshine,Sunny and clear skies,city,3,3,false
+humidity,Humidity,Humidity levels,city,3,3,false
+rainfall,Rainfall,Amount of rainfall and precipitation,city,3,3,false
+winterWarmth,Winter Warmth,Mild winter temperatures,city,3,2,false
