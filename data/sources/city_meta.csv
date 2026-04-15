@@ -1,0 +1,251 @@
+id,name,country,region,population,climate,industries,primaryLanguage,gdpPerCapita,density,nickname,lat,lon
+tokyo,Tokyo,Japan,Asia,14000000,temperate,tech;finance;creative,japanese,42,6158,The Big Mikan,35.69,139.69
+newYork,New York,United States,North America,8300000,temperate,tech;finance;creative;media,english,80,10900,The Big Apple,40.71,-74.01
+london,London,United Kingdom,Europe,9000000,temperate,finance;tech;creative;media,english,65,5600,The Big Smoke,51.51,-0.13
+paris,Paris,France,Europe,2100000,temperate,creative;finance;tech;fashion,french,55,20600,City of Light,48.85,2.35
+sydney,Sydney,Australia,Oceania,5300000,subtropical,finance;tech;mining,english,65,430,Harbour City,-33.87,151.21
+toronto,Toronto,Canada,North America,2900000,continental,tech;finance;film,english,60,4334,The 6ix,43.65,-79.38
+berlin,Berlin,Germany,Europe,3700000,continental,tech;creative;startup,german,42,4120,The Grey City,52.52,13.41
+singapore,Singapore,Singapore,Asia,5700000,tropical,finance;tech;trade,english,88,8358,The Lion City,1.35,103.82
+mexicoCity,Mexico City,Mexico,Latin America,9200000,subtropical,creative;finance;tech,spanish,18,6000,City of Palaces,19.43,-99.13
+saoPaulo,São Paulo,Brazil,Latin America,12300000,subtropical,finance;tech;creative,portuguese,18,7216,Sampa,-23.55,-46.63
+amsterdam,Amsterdam,Netherlands,Europe,900000,temperate,tech;finance;creative,dutch,60,5135,Venice of the North,52.37,4.90
+barcelona,Barcelona,Spain,Europe,1600000,subtropical,tech;creative;tourism,spanish,35,15987,The City of Counts,41.39,2.16
+bangkok,Bangkok,Thailand,Asia,10500000,tropical,tourism;tech;trade,thai,18,5258,City of Angels,13.75,100.52
+dubai,Dubai,United Arab Emirates,Middle East,3500000,tropical,finance;trade;tourism,arabic,38,693,City of Gold,25.20,55.27
+seoul,Seoul,South Korea,Asia,9700000,continental,tech;creative;finance,korean,35,15850,Soul of Asia,37.57,126.98
+vienna,Vienna,Austria,Europe,1900000,continental,finance;creative;tech,german,52,4600,City of Music,48.21,16.37
+lisbon,Lisbon,Portugal,Europe,500000,subtropical,tech;creative;tourism,portuguese,28,6659,City of Seven Hills,38.72,-9.14
+copenhagen,Copenhagen,Denmark,Europe,800000,temperate,tech;creative;finance,danish,60,6904,City of Spires,55.68,12.57
+melbourne,Melbourne,Australia,Oceania,5000000,temperate,tech;finance;creative,english,62,505,Marvellous Melbourne,-37.81,144.96
+buenosAires,Buenos Aires,Argentina,Latin America,3100000,subtropical,creative;finance;tech,spanish,12,14827,Paris of South America,-34.61,-58.38
+prague,Prague,Czech Republic,Europe,1300000,continental,tech;creative;tourism,czech,28,2600,The Golden City,50.08,14.44
+taipei,Taipei,Taiwan,Asia,2600000,subtropical,tech;creative;finance,mandarin,32,9962,City of Azaleas,25.05,121.56
+dublin,Dublin,Ireland,Europe,550000,temperate,tech;finance;creative,english,85,4900,The Fair City,53.33,-6.25
+mumbai,Mumbai,India,Asia,20700000,tropical,finance;tech;creative,hindi,5,20694,City of Dreams,19.08,72.88
+istanbul,Istanbul,Turkey,Middle East,15500000,subtropical,trade;finance;creative,turkish,18,2957,City on Two Continents,41.01,28.95
+stockholm,Stockholm,Sweden,Europe,1000000,continental,tech;finance;creative,swedish,58,4870,Beauty on Water,59.33,18.07
+zurich,Zurich,Switzerland,Europe,400000,continental,finance;tech,german,85,4592,Little Big City,47.37,8.54
+hanoi,Hanoi,Vietnam,Asia,8100000,subtropical,tech;trade;creative,vietnamese,5,2398,City of Lakes,21.03,105.85
+cairo,Cairo,Egypt,Middle East,10100000,tropical,trade;tourism;finance,arabic,8,19376,City of Minarets,30.04,31.24
+bogota,Bogotá,Colombia,Latin America,7400000,subtropical,tech;creative;finance,spanish,10,4310,Athens of South America,4.71,-74.07
+kualaLumpur,Kuala Lumpur,Malaysia,Asia,1800000,tropical,tech;finance;trade,malay,22,6891,Garden City of Lights,3.14,101.69
+rome,Rome,Italy,Europe,2800000,subtropical,creative;tourism;fashion,italian,35,2096,The Eternal City,41.90,12.50
+nairobi,Nairobi,Kenya,Africa,4700000,tropical,tech;finance;creative,swahili,4,4509,Silicon Savannah,-1.29,36.82
+capeTown,Cape Town,South Africa,Africa,4600000,subtropical,tech;creative;tourism,english,8,1600,The Mother City,-33.92,18.42
+helsinki,Helsinki,Finland,Europe,650000,continental,tech;creative;finance,finnish,52,3050,Daughter of the Baltic,60.17,24.94
+budapest,Budapest,Hungary,Europe,1700000,continental,tech;creative;tourism,hungarian,22,3370,Pearl of the Danube,47.50,19.04
+athensGreece,Athens,Greece,Europe,660000,subtropical,tourism;creative;trade,greek,22,17090,Cradle of Democracy,37.98,23.73
+sanFrancisco,San Francisco,United States,North America,870000,temperate,tech;finance;creative,english,120,6912,The City by the Bay,37.77,-122.42
+losAngeles,Los Angeles,United States,North America,3900000,subtropical,creative;tech;media,english,72,3284,City of Angels,34.05,-118.24
+chicago,Chicago,United States,North America,2700000,continental,finance;tech;creative,english,62,4714,The Windy City,41.88,-87.63
+austin,Austin,United States,North America,1000000,subtropical,tech;creative;startup,english,72,1235,Live Music Capital,30.27,-97.74
+vancouver,Vancouver,Canada,North America,2500000,temperate,tech;film;creative,english,55,5493,Hollywood North,49.28,-123.12
+montreal,Montreal,Canada,North America,1800000,continental,tech;creative;finance,french,48,4916,Paris of North America,45.50,-73.57
+osaka,Osaka,Japan,Asia,2700000,temperate,tech;finance;creative,japanese,38,11836,Nation's Kitchen,34.69,135.50
+kyoto,Kyoto,Japan,Asia,1500000,temperate,creative;tourism,japanese,38,1801,The Cultural Capital,35.01,135.77
+marrakech,Marrakech,Morocco,Africa,1000000,subtropical,tourism;creative,arabic,4,5500,The Red City,31.63,-8.00
+reykjavik,Reykjavik,Iceland,Europe,130000,continental,creative;tourism;tech,icelandic,72,357,Bay of Smokes,64.13,-21.93
+denver,Denver,United States,North America,715000,continental,tech;finance;creative,english,62,1683,Mile High City,39.74,-104.98
+milanItaly,Milan,Italy,Europe,1400000,temperate,finance;fashion;creative,italian,42,7200,Fashion Capital,45.46,9.19
+washingtonDC,Washington DC,United States,North America,690000,temperate,finance;tech;media,english,80,4230,The District,38.91,-77.04
+madrid,Madrid,Spain,Europe,3300000,subtropical,finance;creative;tourism;media,spanish,35,5400,City of Bear and Tree,40.42,-3.70
+brussels,Brussels,Belgium,Europe,1200000,temperate,finance;tech;trade,french,48,7700,Capital of Europe,50.85,4.35
+warsaw,Warsaw,Poland,Europe,1800000,continental,tech;finance;startup,polish,22,3400,Phoenix City,52.23,21.01
+oslo,Oslo,Norway,Europe,700000,continental,finance;tech;creative,norwegian,82,1500,Tiger City,59.91,10.75
+edinburgh,Edinburgh,United Kingdom,Europe,540000,temperate,finance;tech;creative;tourism,english,52,1800,Athens of the North,55.95,-3.19
+munich,Munich,Germany,Europe,1500000,continental,tech;finance;creative,german,55,4800,Millionendorf,48.14,11.58
+porto,Porto,Portugal,Europe,320000,subtropical,tech;creative;tourism,portuguese,22,5700,Invicta,41.16,-8.63
+seville,Seville,Spain,Europe,690000,subtropical,tourism;creative,spanish,28,4800,City of Grace,37.39,-5.99
+florence,Florence,Italy,Europe,380000,subtropical,tourism;fashion;creative,italian,38,3800,Cradle of the Renaissance,43.77,11.26
+naples,Naples,Italy,Europe,970000,subtropical,tourism;creative,italian,18,8200,Parthenopean City,40.85,14.27
+krakow,Kraków,Poland,Europe,780000,continental,tech;creative;tourism,polish,20,2400,Royal City,50.06,19.94
+dubrovnik,Dubrovnik,Croatia,Europe,42000,subtropical,tourism;creative,croatian,18,120,Pearl of the Adriatic,42.65,18.09
+tallinn,Tallinn,Estonia,Europe,450000,continental,tech;startup;creative,estonian,28,2600,Pearl of the Baltic,59.44,24.75
+riga,Riga,Latvia,Europe,630000,continental,tech;finance;creative,latvian,22,2500,Paris of the North,56.95,24.11
+vilnius,Vilnius,Lithuania,Europe,590000,continental,tech;finance;startup,lithuanian,24,1500,Rome of the North,54.69,25.28
+bucharest,Bucharest,Romania,Europe,1800000,continental,tech;finance;creative,romanian,18,8400,Little Paris,44.43,26.10
+sofia,Sofia,Bulgaria,Europe,1290000,continental,tech;finance;creative,bulgarian,14,6200,City of Free Spirit,42.70,23.32
+belgrade,Belgrade,Serbia,Europe,1680000,continental,tech;creative;startup,serbian,12,3500,White City,44.82,20.46
+zagreb,Zagreb,Croatia,Europe,800000,continental,tech;creative;tourism,croatian,20,1240,Little Vienna,45.81,15.98
+geneva,Geneva,Switzerland,Europe,200000,continental,finance;tech,french,90,12000,Capital of Peace,46.20,6.15
+lyon,Lyon,France,Europe,520000,temperate,tech;finance;creative,french,45,10500,Gastronomic Capital,45.75,4.83
+gothenburg,Gothenburg,Sweden,Europe,590000,temperate,tech;finance;creative,swedish,52,1500,Little London,57.71,11.97
+rotterdam,Rotterdam,Netherlands,Europe,650000,temperate,trade;tech;finance,dutch,58,3500,Gateway to Europe,51.92,4.48
+luxembourg,Luxembourg City,Luxembourg,Europe,125000,temperate,finance;tech,french,120,2400,Gibraltar of the North,49.61,6.13
+bratislava,Bratislava,Slovakia,Europe,480000,continental,tech;finance;creative,slovak,24,1200,Beauty on the Danube,48.15,17.11
+thessaloniki,Thessaloniki,Greece,Europe,1030000,subtropical,tourism;trade;creative,greek,18,3800,Co-Capital of Greece,40.64,22.94
+valletta,Valletta,Malta,Europe,213000,subtropical,finance;tourism;tech,english,35,6200,Nurse of the Mediterranean,35.90,14.51
+hamburg,Hamburg,Germany,Europe,1840000,temperate,trade;tech;finance;media,german,55,2400,Gateway to the World,53.55,10.00
+cluj,Cluj-Napoca,Romania,Europe,321000,continental,tech;startup;creative,romanian,18,6800,Silicon Valley of Eastern Europe,46.77,23.59
+nicosia,Nicosia,Cyprus,Europe,330000,subtropical,finance;tourism;trade,greek,30,1200,City of Love,35.17,33.37
+beijing,Beijing,China,Asia,21500000,continental,tech;finance;trade,mandarin,28,1300,Northern Capital,39.91,116.39
+shanghai,Shanghai,China,Asia,24900000,subtropical,finance;tech;trade,mandarin,32,3900,Paris of the East,31.23,121.47
+hongKong,Hong Kong,China,Asia,7500000,subtropical,finance;trade;tech,cantonese,52,6800,Pearl of the Orient,22.32,114.17
+shenzhen,Shenzhen,China,Asia,17500000,subtropical,tech;finance;trade,mandarin,38,8000,Silicon Valley of China,22.54,114.06
+chengdu,Chengdu,China,Asia,21000000,subtropical,tech;creative;finance,mandarin,20,1400,Land of Abundance,30.66,104.07
+bangalore,Bangalore,India,Asia,12500000,subtropical,tech;startup;finance,kannada,6,4600,Silicon Valley of India,12.97,77.59
+newDelhi,New Delhi,India,Asia,32000000,continental,finance;tech;trade,hindi,6,11000,Heart of India,28.61,77.21
+kolkata,Kolkata,India,Asia,15000000,tropical,finance;creative;trade,bengali,4,24000,City of Joy,22.57,88.36
+hoChiMinhCity,Ho Chi Minh City,Vietnam,Asia,9000000,tropical,tech;trade;creative,vietnamese,5,4300,Pearl of the Far East,10.78,106.70
+jakarta,Jakarta,Indonesia,Asia,10500000,tropical,finance;trade;tech,indonesian,8,15700,Big Durian,-6.21,106.85
+manila,Manila,Philippines,Asia,14000000,tropical,trade;tech;creative,filipino,5,71000,Pearl of the Orient Seas,14.60,121.00
+tbilisi,Tbilisi,Georgia,Asia,1100000,continental,tech;tourism;creative,georgian,8,4700,City of Warm Bread,41.69,44.83
+yerevan,Yerevan,Armenia,Asia,1090000,continental,tech;creative;finance,armenian,8,4800,Pink City,40.18,44.51
+almaty,Almaty,Kazakhstan,Asia,2100000,continental,finance;trade;tech,kazakh,12,700,City of Apples,43.26,76.94
+auckland,Auckland,New Zealand,Oceania,1700000,temperate,finance;tech;creative,english,45,1200,City of Sails,-36.85,174.76
+brisbane,Brisbane,Australia,Oceania,2600000,subtropical,tech;finance;creative,english,58,480,River City,-27.47,153.02
+perth,Perth,Australia,Oceania,2100000,subtropical,mining;finance;tech,english,68,320,City of Light,-31.95,115.86
+wellington,Wellington,New Zealand,Oceania,440000,temperate,creative;tech;finance,english,45,1400,Windy Wellington,-41.29,174.78
+fukuoka,Fukuoka,Japan,Asia,1600000,subtropical,tech;creative;tourism,japanese,35,4700,Hakata,33.59,130.40
+busan,Busan,South Korea,Asia,3400000,subtropical,trade;creative;tech,korean,28,4400,City of the Sea,35.18,129.08
+colombo,Colombo,Sri Lanka,Asia,750000,tropical,trade;finance;tourism,sinhala,4,3400,Pearl of the Indian Ocean,6.93,79.84
+kathmandu,Kathmandu,Nepal,Asia,1400000,subtropical,tourism;creative;trade,nepali,2,20000,City of Temples,27.71,85.32
+yangon,Yangon,Myanmar,Asia,7400000,tropical,trade;creative;tourism,burmese,3,4800,Garden City of the East,16.87,96.19
+phnomPenh,Phnom Penh,Cambodia,Asia,2200000,tropical,trade;tourism;creative,khmer,3,4000,Pearl of Asia,11.56,104.92
+ulaanbaatar,Ulaanbaatar,Mongolia,Asia,1500000,continental,trade;mining;creative,mongolian,5,300,Red Hero,47.89,106.91
+macau,Macau,China,Asia,680000,subtropical,tourism;trade;finance,cantonese,62,21000,Las Vegas of Asia,22.20,113.55
+hyderabad,Hyderabad,India,Asia,10500000,subtropical,tech;startup;finance,telugu,6,18000,City of Pearls,17.38,78.48
+guangzhou,Guangzhou,China,Asia,16700000,subtropical,trade;finance;tech,cantonese,30,1800,City of Flowers,23.13,113.26
+cebu,Cebu City,Philippines,Asia,920000,tropical,tourism;trade;tech,filipino,5,4600,Queen City of the South,10.32,123.90
+bali,Bali,Indonesia,Asia,900000,tropical,tourism;creative,indonesian,8,700,Island of the Gods,-8.34,115.09
+miami,Miami,USA,Americas,470000,subtropical,tourism;finance;tech,english,55,4700,Magic City,25.76,-80.19
+seattle,Seattle,USA,Americas,750000,temperate,tech;trade;creative,english,75,3400,Emerald City,47.61,-122.33
+boston,Boston,USA,Americas,680000,continental,education;finance;biotech,english,78,5300,The Hub,42.36,-71.06
+atlanta,Atlanta,USA,Americas,510000,subtropical,finance;tech;media,english,52,1450,The ATL,33.75,-84.39
+houston,Houston,USA,Americas,2300000,subtropical,energy;healthcare;trade,english,52,1250,Space City,29.76,-95.37
+dallas,Dallas,USA,Americas,1300000,subtropical,finance;tech;energy,english,55,1500,Big D,32.78,-96.80
+portland,Portland,USA,Americas,650000,temperate,tech;creative;trade,english,62,1900,City of Roses,45.52,-122.68
+minneapolis,Minneapolis,USA,Americas,430000,continental,healthcare;finance;retail,english,62,2900,City of Lakes,44.98,-93.27
+newOrleans,New Orleans,USA,Americas,380000,subtropical,tourism;energy;trade,english,38,1800,The Big Easy,29.95,-90.07
+philadelphia,Philadelphia,USA,Americas,1580000,continental,education;pharma;finance,english,55,4400,City of Brotherly Love,39.95,-75.17
+phoenix,Phoenix,USA,Americas,1600000,desert,tech;finance;tourism,english,48,1200,Valley of the Sun,33.45,-112.07
+calgary,Calgary,Canada,Americas,1340000,continental,energy;finance;tech,english,68,1600,Cowtown,51.05,-114.07
+ottawa,Ottawa,Canada,Americas,1020000,continental,government;tech;education,english,65,340,The Nation's Capital,45.42,-75.70
+lima,Lima,Peru,Americas,10750000,desert,trade;finance;tourism,spanish,7,3100,City of Kings,-12.05,-77.04
+santiago,Santiago,Chile,Americas,7100000,temperate,finance;mining;tech,spanish,15,8600,Gateway to the Andes,-33.45,-70.67
+medellin,Medellin,Colombia,Americas,2600000,subtropical,tech;tourism;trade,spanish,6,19000,City of Eternal Spring,6.25,-75.57
+quito,Quito,Ecuador,Americas,1820000,subtropical,trade;tourism;government,spanish,6,4500,Middle of the World,-0.23,-78.51
+montevideo,Montevideo,Uruguay,Americas,1380000,temperate,trade;finance;education,spanish,17,2500,Southern Star,-34.90,-56.19
+guadalajara,Guadalajara,Mexico,Americas,5200000,subtropical,tech;trade;creative,spanish,12,5700,Pearl of the West,20.66,-103.35
+monterrey,Monterrey,Mexico,Americas,5100000,subtropical,finance;trade;manufacturing,spanish,18,7200,Sultan of the North,25.67,-100.31
+havana,Havana,Cuba,Americas,2140000,tropical,tourism;education,spanish,9,2900,Pearl of the Antilles,23.13,-82.38
+panamaCity,Panama City,Panama,Americas,880000,tropical,finance;trade;tourism,spanish,13,1200,Hub of the Americas,8.99,-79.52
+sanJoseCR,San Jose,Costa Rica,Americas,1170000,tropical,tourism;tech;agriculture,spanish,12,5100,Chepe,9.93,-84.08
+rioDeJaneiro,Rio de Janeiro,Brazil,Americas,6700000,tropical,tourism;finance;oil,portuguese,8,5200,Marvelous City,-22.91,-43.17
+cartagena,Cartagena,Colombia,Americas,1010000,tropical,tourism;trade;finance,spanish,5,1500,Heroic City,10.39,-75.48
+curitiba,Curitiba,Brazil,Americas,1950000,subtropical,automotive;tech;trade,portuguese,11,4400,Ecological Capital,-25.43,-49.27
+asuncion,Asuncion,Paraguay,Americas,550000,subtropical,trade;agriculture,spanish,5,2400,Mother of Cities,-25.29,-57.65
+laPaz,La Paz,Bolivia,Americas,870000,subtropical,trade;mining;tourism,spanish,3,3800,City in the Clouds,-16.50,-68.15
+lasVegas,Las Vegas,USA,Americas,640000,desert,tourism;entertainment;gaming,english,45,1700,Sin City,36.17,-115.14
+sanDiego,San Diego,USA,Americas,1420000,subtropical,biotech;military;tourism,english,62,1700,America's Finest City,32.72,-117.16
+telAviv,Tel Aviv,Israel,Middle East,460000,subtropical,tech;finance;startup,hebrew,52,8000,Startup Nation Capital,32.09,34.79
+riyadh,Riyadh,Saudi Arabia,Middle East,7600000,desert,energy;finance;trade,arabic,25,780,Capital of Arabia,24.69,46.72
+abuDhabi,Abu Dhabi,UAE,Middle East,1540000,desert,energy;finance;tourism,arabic,75,380,Gulf Capital,24.47,54.37
+doha,Doha,Qatar,Middle East,600000,desert,energy;finance;tourism,arabic,68,2100,Rising Gulf Star,25.29,51.53
+muscat,Muscat,Oman,Middle East,900000,desert,energy;tourism;trade,arabic,18,450,Pearl of Arabia,23.58,58.38
+amman,Amman,Jordan,Middle East,1200000,subtropical,trade;tourism;finance,arabic,5,6600,White City,31.95,35.93
+beirut,Beirut,Lebanon,Middle East,2200000,subtropical,tourism;finance;trade,arabic,7,7800,Paris of the Middle East,33.89,35.50
+kuwaitCity,Kuwait City,Kuwait,Middle East,2990000,desert,energy;finance;trade,arabic,32,3300,Gulf Pearl,29.37,47.98
+tehran,Tehran,Iran,Middle East,9300000,continental,energy;manufacturing;trade,persian,5,11500,City of Firsts,35.69,51.39
+manama,Manama,Bahrain,Middle East,650000,desert,finance;tourism;trade,arabic,24,2300,Pearl of the Gulf,26.22,50.57
+lagos,Lagos,Nigeria,Africa,15000000,tropical,trade;finance;media,english,4,6500,Centre of Excellence,6.52,3.38
+accra,Accra,Ghana,Africa,2500000,tropical,trade;finance;tourism,english,4,1900,Gateway to West Africa,5.56,-0.20
+casablanca,Casablanca,Morocco,Africa,3750000,subtropical,trade;finance;manufacturing,arabic,5,4700,White City of Morocco,33.59,-7.62
+tunis,Tunis,Tunisia,Africa,2290000,subtropical,tourism;trade;agriculture,arabic,5,4200,Mediterranean Gem,36.82,10.17
+addisAbaba,Addis Ababa,Ethiopia,Africa,3500000,subtropical,trade;government;agriculture,amharic,2,8200,Capital of Africa,9.03,38.74
+kigali,Kigali,Rwanda,Africa,1160000,subtropical,tourism;tech;trade,english,2,3000,Land of a Thousand Hills,-1.94,30.06
+darEsSalaam,Dar es Salaam,Tanzania,Africa,5400000,tropical,trade;tourism;manufacturing,swahili,2,5000,Haven of Peace,-6.79,39.27
+johannesburg,Johannesburg,South Africa,Africa,5635000,subtropical,finance;mining;trade,english,7,2800,City of Gold,-26.20,28.04
+dakar,Dakar,Senegal,Africa,3730000,tropical,trade;fishing;tourism,french,3,6200,Gateway to Africa,14.69,-17.44
+abidjan,Abidjan,Ivory Coast,Africa,5170000,tropical,trade;finance;agriculture,french,4,4800,Paris of West Africa,5.35,-4.00
+karachi,Karachi,Pakistan,Asia,16100000,subtropical,trade;manufacturing;finance,urdu,2,26000,City of Lights,24.86,67.01
+lahore,Lahore,Pakistan,Asia,13100000,subtropical,trade;creative;education,urdu,2,11000,Heart of Pakistan,31.55,74.34
+dhaka,Dhaka,Bangladesh,Asia,21700000,tropical,manufacturing;trade;textiles,bengali,3,44000,City of Mosques,23.81,90.41
+islamabad,Islamabad,Pakistan,Asia,2000000,subtropical,government;tech;trade,urdu,3,1800,Green Capital,33.72,73.06
+tashkent,Tashkent,Uzbekistan,Asia,2900000,continental,trade;manufacturing;government,uzbek,3,7400,Crossroads of Civilizations,41.30,69.24
+ankara,Ankara,Turkey,Asia,5750000,continental,government;manufacturing;trade,turkish,10,2300,Heart of Turkey,39.93,32.86
+nagoya,Nagoya,Japan,Asia,2330000,subtropical,manufacturing;automotive;tech,japanese,42,6900,Industrial Heart of Japan,35.18,136.91
+sapporo,Sapporo,Japan,Asia,1970000,continental,tourism;food;manufacturing,japanese,32,1800,Northern Capital,43.06,141.35
+hiroshima,Hiroshima,Japan,Asia,1200000,subtropical,manufacturing;tourism;trade,japanese,35,1300,City of Peace,34.39,132.46
+chongqing,Chongqing,China,Asia,32000000,subtropical,manufacturing;tech;trade,mandarin,12,380,Mountain City,29.56,106.55
+xian,Xian,China,Asia,12900000,continental,history;manufacturing;tourism,mandarin,12,3800,Ancient Capital,34.34,108.94
+wuhan,Wuhan,China,Asia,11080000,subtropical,manufacturing;trade;education,mandarin,18,1100,Chicago of China,30.59,114.31
+nanjing,Nanjing,China,Asia,9300000,subtropical,education;tech;manufacturing,mandarin,20,1500,Southern Capital,32.06,118.77
+marseille,Marseille,France,Europe,870000,subtropical,trade;tourism;shipping,french,32,3600,Phocaean City,43.30,5.37
+nice,Nice,France,Europe,342000,subtropical,tourism;finance;trade,french,38,5200,Pearl of the Riviera,43.71,7.26
+turin,Turin,Italy,Europe,870000,continental,manufacturing;automotive;creative,italian,32,6700,City of Baroque,45.07,7.69
+gdansk,Gdansk,Poland,Europe,485000,continental,trade;maritime;tourism,polish,18,1700,Amber City,54.35,18.65
+valencia,Valencia,Spain,Europe,800000,subtropical,tech;tourism;food,spanish,28,5900,City of Arts and Science,39.47,-0.38
+sarajevo,Sarajevo,Bosnia,Europe,275000,continental,tourism;trade;manufacturing,bosnian,7,2500,Jerusalem of Europe,43.85,18.39
+ljubljana,Ljubljana,Slovenia,Europe,295000,continental,tourism;trade;tech,slovenian,28,1100,Dragon City,46.05,14.51
+poznan,Poznan,Poland,Europe,550000,continental,trade;education;tech,polish,18,2100,Poznan the Proud,52.41,16.93
+beloHorizonte,Belo Horizonte,Brazil,Americas,2500000,subtropical,mining;finance;tech,portuguese,9,7300,Garden City,-19.92,-43.94
+portoAlegre,Porto Alegre,Brazil,Americas,1480000,subtropical,trade;manufacturing;agriculture,portuguese,10,2800,Gaucho Capital,-30.03,-51.23
+brasilia,Brasilia,Brazil,Americas,3050000,tropical,government;finance;tech,portuguese,20,520,Futuristic Capital,-15.78,-47.93
+sanAntonio,San Antonio,USA,Americas,1500000,subtropical,military;healthcare;tourism,english,42,1100,Alamo City,29.42,-98.49
+nashville,Nashville,USA,Americas,700000,subtropical,music;healthcare;tech,english,52,1400,Music City,36.17,-86.78
+charlotte,Charlotte,USA,Americas,900000,subtropical,finance;tech;trade,english,55,1200,Queen City,35.23,-80.84
+recife,Recife,Brazil,Americas,1650000,tropical,trade;tourism;agriculture,portuguese,7,6300,Venice of Brazil,-8.05,-34.88
+sanJuanPR,San Juan,USA,Americas,340000,tropical,tourism;finance;manufacturing,spanish,30,3800,La Ciudad Amurallada,18.47,-66.11
+algiers,Algiers,Algeria,Africa,3700000,subtropical,energy;trade;government,arabic,5,3900,White City of Algeria,36.74,3.06
+baghdad,Baghdad,Iraq,Middle East,7200000,subtropical,energy;trade;government,arabic,6,10000,City of Peace,33.34,44.40
+kampala,Kampala,Uganda,Africa,1650000,tropical,trade;agriculture;tech,english,3,4200,City on Seven Hills,0.31,32.58
+adelaide,Adelaide,Australia,Oceania,1400000,subtropical,education;wine;manufacturing,english,58,700,Festival City,-34.93,138.60
+incheon,Incheon,South Korea,Asia,3000000,subtropical,trade;manufacturing;logistics,korean,32,2600,Gateway to Korea,37.46,126.71
+penang,Penang,Malaysia,Asia,750000,tropical,tech;tourism;food,malay,15,2500,Pearl of the Orient,5.41,100.33
+bordeaux,Bordeaux,France,Europe,260000,temperate,wine;tourism;aerospace,french,35,3900,World Wine Capital,44.84,-0.58
+bilbao,Bilbao,Spain,Europe,350000,temperate,industry;tourism;creative,spanish,28,4800,Guggenheim City,43.26,-2.93
+baku,Baku,Azerbaijan,Asia,2300000,subtropical,energy;trade;tourism,azerbaijani,6,2500,City of Winds,40.41,49.87
+minsk,Minsk,Belarus,Europe,2000000,continental,manufacturing;trade;tech,belarusian,7,7600,Hero City,53.91,27.57
+tirana,Tirana,Albania,Europe,800000,subtropical,trade;tourism;construction,albanian,6,4200,Eagle City,41.33,19.83
+jerusalem,Jerusalem,Israel,Middle East,920000,subtropical,tourism;government;education,hebrew,45,6200,Holy City,31.78,35.22
+frankfurt,Frankfurt,Germany,Europe,760000,temperate,finance;trade;aviation,german,75,3100,Mainhattan,50.11,8.68
+manchester,Manchester,England,Europe,550000,temperate,media;tech;education;creative,english,45,4700,Madchester,53.48,-2.24
+hangzhou,Hangzhou,China,Asia,12000000,subtropical,tech;finance;tourism,mandarin,22,1000,Heaven on Earth,30.27,120.15
+varanasi,Varanasi,India,Asia,1500000,subtropical,tourism;silk;education,hindi,2,8500,City of Light,25.32,82.97
+liverpool,Liverpool,England,Europe,500000,temperate,maritime;tourism;education;creative,english,32,4600,Pool of Life,53.41,-2.98
+salzburg,Salzburg,Austria,Europe,155000,continental,tourism;education;music,german,55,1700,City of Mozart,47.80,13.04
+detroit,Detroit,USA,Americas,670000,continental,automotive;manufacturing;music,english,32,1600,Motor City,42.33,-83.05
+kyiv,Kyiv,Ukraine,Europe,2800000,continental,tech;government;education,ukrainian,5,3800,Mother of Rus Cities,50.45,30.52
+chennai,Chennai,India,Asia,10900000,tropical,automotive;tech;education,tamil,8,11000,Detroit of Asia,13.08,80.27
+sanjoseca,San Jose,USA,Americas,1000000,subtropical,tech;finance;healthcare,english,100,2100,Capital of Silicon Valley,37.34,-121.89
+antwerp,Antwerp,Belgium,Europe,540000,temperate,trade;diamonds;fashion,dutch,52,4700,Diamond Capital,51.22,4.40
+oakland,Oakland,United States,North America,440000,temperate,tech;creative;trade,english,65,3200,Town,37.8,-122.27
+fortWorth,Fort Worth,United States,North America,960000,subtropical,manufacturing;aerospace;trade,english,55,1100,Cowtown,32.75,-97.33
+baltimore,Baltimore,United States,North America,620000,temperate,healthcare;education;maritime,english,52,2800,Charm City,39.29,-76.61
+columbus,Columbus,United States,North America,905000,continental,tech;education;finance,english,55,1500,Cbus,39.96,-82.99
+honolulu,Honolulu,United States,North America,350000,tropical,tourism;military;trade,english,65,2300,Paradise City,21.31,-157.86
+memphis,Memphis,United States,North America,620000,subtropical,logistics;healthcare;tourism,english,42,730,Bluff City,35.15,-90.05
+milwaukee,Milwaukee,United States,North America,580000,continental,manufacturing;finance;healthcare,english,45,2300,Brew City,43.04,-87.91
+kansasCity,Kansas City,United States,North America,500000,continental,finance;tech;logistics,english,50,600,City of Fountains,39.1,-94.58
+indianapolis,Indianapolis,United States,North America,870000,continental,pharma;auto;sports,english,52,900,Indy,39.77,-86.16
+raleigh,Raleigh,United States,North America,470000,subtropical,tech;education;pharma,english,62,1500,City of Oaks,35.78,-78.64
+jacksonville,Jacksonville,United States,North America,950000,subtropical,banking;military;healthcare,english,48,500,Jax,30.33,-81.66
+saltLakeCity,Salt Lake City,United States,North America,210000,continental,tech;healthcare;tourism,english,58,800,Salt Lake,40.76,-111.89
+venice,Venice,Italy,Europe,260000,temperate,tourism;creative,italian,38,600,La Serenissima,45.44,12.33
+toulouse,Toulouse,France,Europe,470000,temperate,aerospace;tech;education,french,48,3800,Pink City,43.6,1.44
+wroclaw,Wrocław,Poland,Europe,670000,continental,tech;manufacturing;education,polish,25,2200,Florence of Poland,51.11,17.04
+birmingham,Birmingham,United Kingdom,Europe,1100000,temperate,manufacturing;finance;tech,english,38,4100,Second City,52.48,-1.9
+palermo,Palermo,Italy,Europe,660000,subtropical,tourism;trade;agriculture,italian,22,4200,Golden Shell,38.12,13.36
+malaga,Málaga,Spain,Europe,580000,subtropical,tourism;tech;trade,spanish,28,2100,Costa del Sol Capital,36.72,-4.42
+jeddah,Jeddah,Saudi Arabia,Middle East,4700000,desert,trade;finance;tourism,arabic,28,2100,Bride of the Red Sea,21.49,39.19
+alexandria,Alexandria,Egypt,Middle East,5200000,subtropical,trade;maritime;tourism,arabic,6,19200,Bride of the Mediterranean,31.2,29.92
+chiangMai,Chiang Mai,Thailand,Asia,130000,subtropical,tourism;creative;tech,thai,8,1200,Rose of the North,18.79,98.98
+jaipur,Jaipur,India,Asia,3200000,subtropical,tourism;textiles;gems,hindi,4,6400,Pink City,26.91,75.79
+pune,Pune,India,Asia,3100000,subtropical,tech;auto;education,marathi,7,5500,Oxford of the East,18.52,73.86
+ahmedabad,Ahmedabad,India,Asia,5500000,subtropical,textiles;pharma;tech,gujarati,5,11700,Manchester of India,23.02,72.57
+kochi,Kochi,India,Asia,2100000,tropical,maritime;tech;tourism,malayalam,5,5500,Queen of the Arabian Sea,9.94,76.27
+udaipur,Udaipur,India,Asia,450000,subtropical,tourism;marble;textiles,hindi,3,3500,City of Lakes,24.57,73.69
+suzhou,Suzhou,China,Asia,10700000,subtropical,manufacturing;tech;trade,mandarin,25,1200,Venice of the East,31.3,120.62
+yogyakarta,Yogyakarta,Indonesia,Asia,400000,tropical,tourism;education;creative,javanese,4,14000,City of Students,-7.8,110.37
+fez,Fez,Morocco,Africa,1100000,subtropical,tourism;leather;creative,arabic,4,5500,Athens of Africa,34.03,-5.0
+kinshasa,Kinshasa,Democratic Republic of Congo,Africa,17000000,tropical,trade;mining;creative,french,1,4500,Kin la Belle,-4.32,15.32
+luanda,Luanda,Angola,Africa,8900000,tropical,energy;trade;finance,portuguese,6,5700,Tropical Paris,-8.84,13.23
+douala,Douala,Cameroon,Africa,3300000,tropical,trade;manufacturing;maritime,french,3,4200,Economic Capital,4.05,9.7
+cordoba,Córdoba,Argentina,Latin America,1600000,subtropical,automotive;tech;education,spanish,10,2800,La Docta,-31.41,-64.18
+salvador,Salvador,Brazil,Latin America,2900000,tropical,tourism;petrochemicals;creative,portuguese,8,3800,African Rome,-12.97,-38.5
+fortaleza,Fortaleza,Brazil,Latin America,2700000,tropical,tourism;manufacturing;fishing,portuguese,7,7600,City of Light,-3.72,-38.54
+rosario,Rosario,Argentina,Latin America,1300000,subtropical,agriculture;manufacturing;trade,spanish,9,2400,La Chicago Argentina,-32.94,-60.64
+cali,Cali,Colombia,Latin America,2200000,subtropical,agriculture;manufacturing;tourism,spanish,7,4200,Salsa Capital,3.43,-76.52
+cologne,Cologne,Germany,Europe,1100000,temperate,media;automotive;chemistry,german,48,2700,Cathedral City,50.94,6.96

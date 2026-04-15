@@ -1,0 +1,251 @@
+city_id,numbeo_city,numbeo_country,iqair_city,iqair_country
+tokyo,Tokyo,Japan,Tokyo,Japan
+newYork,New York,United States,New York,United States
+london,London,United Kingdom,London,United Kingdom
+paris,Paris,France,Paris,France
+sydney,Sydney,Australia,Sydney,Australia
+toronto,Toronto,Canada,Toronto,Canada
+berlin,Berlin,Germany,Berlin,Germany
+singapore,Singapore,Singapore,Singapore,Singapore
+mexicoCity,Mexico City,Mexico,Mexico City,Mexico
+saoPaulo,São Paulo,Brazil,São Paulo,Brazil
+amsterdam,Amsterdam,Netherlands,Amsterdam,Netherlands
+barcelona,Barcelona,Spain,Barcelona,Spain
+bangkok,Bangkok,Thailand,Bangkok,Thailand
+dubai,Dubai,United Arab Emirates,Dubai,United Arab Emirates
+seoul,Seoul,South Korea,Seoul,South Korea
+vienna,Vienna,Austria,Vienna,Austria
+lisbon,Lisbon,Portugal,Lisbon,Portugal
+copenhagen,Copenhagen,Denmark,Copenhagen,Denmark
+melbourne,Melbourne,Australia,Melbourne,Australia
+buenosAires,Buenos Aires,Argentina,Buenos Aires,Argentina
+prague,Prague,Czech Republic,Prague,Czech Republic
+taipei,Taipei,Taiwan,Taipei,Taiwan
+dublin,Dublin,Ireland,Dublin,Ireland
+mumbai,Mumbai,India,Mumbai,India
+istanbul,Istanbul,Turkey,Istanbul,Turkey
+stockholm,Stockholm,Sweden,Stockholm,Sweden
+zurich,Zurich,Switzerland,Zurich,Switzerland
+hanoi,Hanoi,Vietnam,Hanoi,Vietnam
+cairo,Cairo,Egypt,Cairo,Egypt
+bogota,Bogotá,Colombia,Bogotá,Colombia
+kualaLumpur,Kuala Lumpur,Malaysia,Kuala Lumpur,Malaysia
+rome,Rome,Italy,Rome,Italy
+nairobi,Nairobi,Kenya,Nairobi,Kenya
+capeTown,Cape Town,South Africa,Cape Town,South Africa
+helsinki,Helsinki,Finland,Helsinki,Finland
+budapest,Budapest,Hungary,Budapest,Hungary
+athensGreece,Athens,Greece,Athens,Greece
+sanFrancisco,San Francisco,United States,San Francisco,United States
+losAngeles,Los Angeles,United States,Los Angeles,United States
+chicago,Chicago,United States,Chicago,United States
+austin,Austin,United States,Austin,United States
+vancouver,Vancouver,Canada,Vancouver,Canada
+montreal,Montreal,Canada,Montreal,Canada
+osaka,Osaka,Japan,Osaka,Japan
+kyoto,Kyoto,Japan,Kyoto,Japan
+marrakech,Marrakech,Morocco,Marrakech,Morocco
+reykjavik,Reykjavik,Iceland,Reykjavik,Iceland
+denver,Denver,United States,Denver,United States
+milanItaly,Milan,Italy,Milan,Italy
+washingtonDC,Washington DC,United States,Washington DC,United States
+madrid,Madrid,Spain,Madrid,Spain
+brussels,Brussels,Belgium,Brussels,Belgium
+warsaw,Warsaw,Poland,Warsaw,Poland
+oslo,Oslo,Norway,Oslo,Norway
+edinburgh,Edinburgh,United Kingdom,Edinburgh,United Kingdom
+munich,Munich,Germany,Munich,Germany
+porto,Porto,Portugal,Porto,Portugal
+seville,Seville,Spain,Seville,Spain
+florence,Florence,Italy,Florence,Italy
+naples,Naples,Italy,Naples,Italy
+krakow,Kraków,Poland,Kraków,Poland
+dubrovnik,Dubrovnik,Croatia,Dubrovnik,Croatia
+tallinn,Tallinn,Estonia,Tallinn,Estonia
+riga,Riga,Latvia,Riga,Latvia
+vilnius,Vilnius,Lithuania,Vilnius,Lithuania
+bucharest,Bucharest,Romania,Bucharest,Romania
+sofia,Sofia,Bulgaria,Sofia,Bulgaria
+belgrade,Belgrade,Serbia,Belgrade,Serbia
+zagreb,Zagreb,Croatia,Zagreb,Croatia
+geneva,Geneva,Switzerland,Geneva,Switzerland
+lyon,Lyon,France,Lyon,France
+gothenburg,Gothenburg,Sweden,Gothenburg,Sweden
+rotterdam,Rotterdam,Netherlands,Rotterdam,Netherlands
+luxembourg,Luxembourg City,Luxembourg,Luxembourg City,Luxembourg
+bratislava,Bratislava,Slovakia,Bratislava,Slovakia
+thessaloniki,Thessaloniki,Greece,Thessaloniki,Greece
+valletta,Valletta,Malta,Valletta,Malta
+hamburg,Hamburg,Germany,Hamburg,Germany
+cluj,Cluj-Napoca,Romania,Cluj-Napoca,Romania
+nicosia,Nicosia,Cyprus,Nicosia,Cyprus
+beijing,Beijing,China,Beijing,China
+shanghai,Shanghai,China,Shanghai,China
+hongKong,Hong Kong,China,Hong Kong,China
+shenzhen,Shenzhen,China,Shenzhen,China
+chengdu,Chengdu,China,Chengdu,China
+bangalore,Bangalore,India,Bangalore,India
+newDelhi,New Delhi,India,New Delhi,India
+kolkata,Kolkata,India,Kolkata,India
+hoChiMinhCity,Ho Chi Minh City,Vietnam,Ho Chi Minh City,Vietnam
+jakarta,Jakarta,Indonesia,Jakarta,Indonesia
+manila,Manila,Philippines,Manila,Philippines
+tbilisi,Tbilisi,Georgia,Tbilisi,Georgia
+yerevan,Yerevan,Armenia,Yerevan,Armenia
+almaty,Almaty,Kazakhstan,Almaty,Kazakhstan
+auckland,Auckland,New Zealand,Auckland,New Zealand
+brisbane,Brisbane,Australia,Brisbane,Australia
+perth,Perth,Australia,Perth,Australia
+wellington,Wellington,New Zealand,Wellington,New Zealand
+fukuoka,Fukuoka,Japan,Fukuoka,Japan
+busan,Busan,South Korea,Busan,South Korea
+colombo,Colombo,Sri Lanka,Colombo,Sri Lanka
+kathmandu,Kathmandu,Nepal,Kathmandu,Nepal
+yangon,Yangon,Myanmar,Yangon,Myanmar
+phnomPenh,Phnom Penh,Cambodia,Phnom Penh,Cambodia
+ulaanbaatar,Ulaanbaatar,Mongolia,Ulaanbaatar,Mongolia
+macau,Macau,China,Macau,China
+hyderabad,Hyderabad,India,Hyderabad,India
+guangzhou,Guangzhou,China,Guangzhou,China
+cebu,Cebu City,Philippines,Cebu City,Philippines
+bali,Bali,Indonesia,Bali,Indonesia
+miami,Miami,USA,Miami,USA
+seattle,Seattle,USA,Seattle,USA
+boston,Boston,USA,Boston,USA
+atlanta,Atlanta,USA,Atlanta,USA
+houston,Houston,USA,Houston,USA
+dallas,Dallas,USA,Dallas,USA
+portland,Portland,USA,Portland,USA
+minneapolis,Minneapolis,USA,Minneapolis,USA
+newOrleans,New Orleans,USA,New Orleans,USA
+philadelphia,Philadelphia,USA,Philadelphia,USA
+phoenix,Phoenix,USA,Phoenix,USA
+calgary,Calgary,Canada,Calgary,Canada
+ottawa,Ottawa,Canada,Ottawa,Canada
+lima,Lima,Peru,Lima,Peru
+santiago,Santiago,Chile,Santiago,Chile
+medellin,Medellin,Colombia,Medellin,Colombia
+quito,Quito,Ecuador,Quito,Ecuador
+montevideo,Montevideo,Uruguay,Montevideo,Uruguay
+guadalajara,Guadalajara,Mexico,Guadalajara,Mexico
+monterrey,Monterrey,Mexico,Monterrey,Mexico
+havana,Havana,Cuba,Havana,Cuba
+panamaCity,Panama City,Panama,Panama City,Panama
+sanJoseCR,San Jose,Costa Rica,San Jose,Costa Rica
+rioDeJaneiro,Rio de Janeiro,Brazil,Rio de Janeiro,Brazil
+cartagena,Cartagena,Colombia,Cartagena,Colombia
+curitiba,Curitiba,Brazil,Curitiba,Brazil
+asuncion,Asuncion,Paraguay,Asuncion,Paraguay
+laPaz,La Paz,Bolivia,La Paz,Bolivia
+lasVegas,Las Vegas,USA,Las Vegas,USA
+sanDiego,San Diego,USA,San Diego,USA
+telAviv,Tel Aviv,Israel,Tel Aviv,Israel
+riyadh,Riyadh,Saudi Arabia,Riyadh,Saudi Arabia
+abuDhabi,Abu Dhabi,UAE,Abu Dhabi,UAE
+doha,Doha,Qatar,Doha,Qatar
+muscat,Muscat,Oman,Muscat,Oman
+amman,Amman,Jordan,Amman,Jordan
+beirut,Beirut,Lebanon,Beirut,Lebanon
+kuwaitCity,Kuwait City,Kuwait,Kuwait City,Kuwait
+tehran,Tehran,Iran,Tehran,Iran
+manama,Manama,Bahrain,Manama,Bahrain
+lagos,Lagos,Nigeria,Lagos,Nigeria
+accra,Accra,Ghana,Accra,Ghana
+casablanca,Casablanca,Morocco,Casablanca,Morocco
+tunis,Tunis,Tunisia,Tunis,Tunisia
+addisAbaba,Addis Ababa,Ethiopia,Addis Ababa,Ethiopia
+kigali,Kigali,Rwanda,Kigali,Rwanda
+darEsSalaam,Dar es Salaam,Tanzania,Dar es Salaam,Tanzania
+johannesburg,Johannesburg,South Africa,Johannesburg,South Africa
+dakar,Dakar,Senegal,Dakar,Senegal
+abidjan,Abidjan,Ivory Coast,Abidjan,Ivory Coast
+karachi,Karachi,Pakistan,Karachi,Pakistan
+lahore,Lahore,Pakistan,Lahore,Pakistan
+dhaka,Dhaka,Bangladesh,Dhaka,Bangladesh
+islamabad,Islamabad,Pakistan,Islamabad,Pakistan
+tashkent,Tashkent,Uzbekistan,Tashkent,Uzbekistan
+ankara,Ankara,Turkey,Ankara,Turkey
+nagoya,Nagoya,Japan,Nagoya,Japan
+sapporo,Sapporo,Japan,Sapporo,Japan
+hiroshima,Hiroshima,Japan,Hiroshima,Japan
+chongqing,Chongqing,China,Chongqing,China
+xian,Xian,China,Xian,China
+wuhan,Wuhan,China,Wuhan,China
+nanjing,Nanjing,China,Nanjing,China
+marseille,Marseille,France,Marseille,France
+nice,Nice,France,Nice,France
+turin,Turin,Italy,Turin,Italy
+gdansk,Gdansk,Poland,Gdansk,Poland
+valencia,Valencia,Spain,Valencia,Spain
+sarajevo,Sarajevo,Bosnia,Sarajevo,Bosnia
+ljubljana,Ljubljana,Slovenia,Ljubljana,Slovenia
+poznan,Poznan,Poland,Poznan,Poland
+beloHorizonte,Belo Horizonte,Brazil,Belo Horizonte,Brazil
+portoAlegre,Porto Alegre,Brazil,Porto Alegre,Brazil
+brasilia,Brasilia,Brazil,Brasilia,Brazil
+sanAntonio,San Antonio,USA,San Antonio,USA
+nashville,Nashville,USA,Nashville,USA
+charlotte,Charlotte,USA,Charlotte,USA
+recife,Recife,Brazil,Recife,Brazil
+sanJuanPR,San Juan,USA,San Juan,USA
+algiers,Algiers,Algeria,Algiers,Algeria
+baghdad,Baghdad,Iraq,Baghdad,Iraq
+kampala,Kampala,Uganda,Kampala,Uganda
+adelaide,Adelaide,Australia,Adelaide,Australia
+incheon,Incheon,South Korea,Incheon,South Korea
+penang,Penang,Malaysia,Penang,Malaysia
+bordeaux,Bordeaux,France,Bordeaux,France
+bilbao,Bilbao,Spain,Bilbao,Spain
+baku,Baku,Azerbaijan,Baku,Azerbaijan
+minsk,Minsk,Belarus,Minsk,Belarus
+tirana,Tirana,Albania,Tirana,Albania
+jerusalem,Jerusalem,Israel,Jerusalem,Israel
+frankfurt,Frankfurt,Germany,Frankfurt,Germany
+manchester,Manchester,England,Manchester,England
+hangzhou,Hangzhou,China,Hangzhou,China
+varanasi,Varanasi,India,Varanasi,India
+liverpool,Liverpool,England,Liverpool,England
+salzburg,Salzburg,Austria,Salzburg,Austria
+detroit,Detroit,USA,Detroit,USA
+kyiv,Kyiv,Ukraine,Kyiv,Ukraine
+chennai,Chennai,India,Chennai,India
+sanjoseca,San Jose,USA,San Jose,USA
+antwerp,Antwerp,Belgium,Antwerp,Belgium
+oakland,Oakland,United States,Oakland,USA
+fortWorth,Fort Worth,United States,Fort Worth,USA
+baltimore,Baltimore,United States,Baltimore,USA
+columbus,Columbus,United States,Columbus,USA
+honolulu,Honolulu,United States,Honolulu,USA
+memphis,Memphis,United States,Memphis,USA
+milwaukee,Milwaukee,United States,Milwaukee,USA
+kansasCity,Kansas City,United States,Kansas City,USA
+indianapolis,Indianapolis,United States,Indianapolis,USA
+raleigh,Raleigh,United States,Raleigh,USA
+jacksonville,Jacksonville,United States,Jacksonville,USA
+saltLakeCity,Salt Lake City,United States,Salt Lake City,USA
+venice,Venice,Italy,Venice,Italy
+toulouse,Toulouse,France,Toulouse,France
+wroclaw,Wroclaw,Poland,Wroclaw,Poland
+birmingham,Birmingham,United Kingdom,Birmingham,United Kingdom
+palermo,Palermo,Italy,Palermo,Italy
+malaga,Malaga,Spain,Malaga,Spain
+jeddah,Jeddah,Saudi Arabia,Jeddah,Saudi Arabia
+alexandria,Alexandria,Egypt,Alexandria,Egypt
+chiangMai,Chiang Mai,Thailand,Chiang Mai,Thailand
+jaipur,Jaipur,India,Jaipur,India
+pune,Pune,India,Pune,India
+ahmedabad,Ahmedabad,India,Ahmedabad,India
+kochi,Kochi,India,Kochi,India
+udaipur,Udaipur,India,Udaipur,India
+suzhou,Suzhou,China,Suzhou,China
+yogyakarta,Yogyakarta,Indonesia,Yogyakarta,Indonesia
+fez,Fes,Morocco,Fes,Morocco
+kinshasa,Kinshasa,Congo,Kinshasa,Congo
+luanda,Luanda,Angola,Luanda,Angola
+douala,Douala,Cameroon,Douala,Cameroon
+cordoba,Cordoba,Argentina,Cordoba,Argentina
+salvador,Salvador,Brazil,Salvador,Brazil
+fortaleza,Fortaleza,Brazil,Fortaleza,Brazil
+rosario,Rosario,Argentina,Rosario,Argentina
+cali,Cali,Colombia,Cali,Colombia
+cologne,Cologne,Germany,Cologne,Germany
