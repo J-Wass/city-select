@@ -13,7 +13,7 @@ const progressEl = document.getElementById('progress');
 
 // --- CSV parsing ---
 function parseCSV(text) {
-  const lines = text.trim().split('\n');
+  const lines = text.trim().split(/\r?\n/);
   const headers = parseCSVLine(lines[0]);
   return lines.slice(1).map(line => {
     const values = parseCSVLine(line);
@@ -57,7 +57,7 @@ function parseCSVLine(line) {
 async function loadData() {
   const [dimText, cityText, questionsResp] = await Promise.all([
     fetch('data/dimensions.csv').then(r => r.text()),
-    fetch('data/cities.csv').then(r => r.text()),
+    fetch('data/cities.csv', { cache: 'no-cache' }).then(r => r.text()),
     fetch('data/questions.json').then(r => r.json()),
   ]);
 

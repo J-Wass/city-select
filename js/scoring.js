@@ -19,6 +19,7 @@ function getQuizEffects() {
   const multipliers = {};    // dimensionId -> cumulative multiplier
   const dealbreakers = [];   // dimension IDs
   const globalPenalties = []; // { type, threshold, factor }
+  const populationFilters = []; // { min?, max?, factor } — city size preference
   const inversions = new Set(); // dimension IDs to invert (100 - score)
   const prefLabels = {};     // dimensionId -> user-friendly preference label
   const languageTags = new Set(); // user's spoken languages
@@ -46,6 +47,9 @@ function getQuizEffects() {
       if (effects.globalPenalty) {
         globalPenalties.push(effects.globalPenalty);
       }
+      if (effects.populationFilter) {
+        populationFilters.push(effects.populationFilter);
+      }
       if (effects.inversions) {
         for (const dim of effects.inversions) {
           inversions.add(dim);
@@ -66,7 +70,7 @@ function getQuizEffects() {
     }
   }
 
-  return { multipliers, dealbreakers, globalPenalties, inversions, prefLabels, languageTags, climateMatch, industryMatch };
+  return { multipliers, dealbreakers, globalPenalties, populationFilters, inversions, prefLabels, languageTags, climateMatch, industryMatch };
 }
 
 /**
@@ -92,17 +96,20 @@ export function calculateResults() {
 
   for (const city of state.cities) {
     // --- Dealbreaker check ---
-    let eliminated = false;
+    const violatedDealbreakers = [];
     for (const dim of effects.dealbreakers) {
       if ((city.scores[dim] ?? 100) < 30) {
-        eliminated = true;
-        break;
+        violatedDealbreakers.push(dim);
       }
     }
-    if (eliminated) continue;
 
     // --- Global penalty multiplier ---
     let globalMult = 1;
+
+    // Dealbreaker penalty: heavy multiplier per violation (city stays ranked, sinks to bottom)
+    for (const _dim of violatedDealbreakers) {
+      globalMult *= 0.15;
+    }
 
     // Language barrier penalty
     for (const pen of effects.globalPenalties) {
@@ -116,6 +123,14 @@ export function calculateResults() {
     // Climate mismatch penalty
     if (effects.climateMatch && !effects.climateMatch.includes(city.climate)) {
       globalMult *= 0.7;
+    }
+
+    // City size preference penalty
+    for (const pf of effects.populationFilters) {
+      const pop = parseInt(city.population) || 0;
+      if ((pf.min && pop < pf.min) || (pf.max && pop > pf.max)) {
+        globalMult *= pf.factor;
+      }
     }
 
     // Industry match bonus (living mode)
@@ -193,6 +208,7 @@ export function calculateResults() {
       score: finalScore,
       strengths,
       weaknesses,
+      violatedDealbreakers,
     });
   }
 

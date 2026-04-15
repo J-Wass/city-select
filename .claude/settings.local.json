@@ -2,7 +2,25 @@
   "permissions": {
     "allow": [
       "WebSearch",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(node --input-type=module)",
+      "Bash(python sources/_seed.py)",
+      "Bash(python build.py)",
+      "Bash(python sources/_recover.py)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:api.worldbank.org)",
+      "WebFetch(domain:climate-api.open-meteo.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:archive-api.open-meteo.com)",
+      "Bash(curl -s \"https://archive-api.open-meteo.com/v1/archive?latitude=40&longitude=10&start_date=2020-01-01&end_date=2020-12-31&monthly=temperature_2m_mean\")",
+      "Bash(curl -s \"https://api.worldbank.org/v2/country/all/indicator/CC.EST?format=json&mrv=1&per_page=300\")",
+      "Bash(curl -s \"https://archive-api.open-meteo.com/v1/archive?latitude=35.69&longitude=139.69&start_date=2020-01-01&end_date=2020-12-31&monthly=temperature_2m_mean,precipitation_sum,relative_humidity_2m_mean,sunshine_duration\")",
+      "Bash(curl:*)",
+      "WebFetch(domain:open-meteo.com)",
+      "Bash(python sources/download.py --skip-climate)",
+      "Bash(python -c ':*)",
+      "Bash(python:*)",
+      "Bash(grep -v \"^$\")"
     ]
   }
 }
