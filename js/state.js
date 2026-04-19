@@ -1,6 +1,5 @@
 // Simple global state object
 const state = {
-  mode: null,            // "living" or "visiting"
   dimensions: [],        // parsed from CSV
   cities: [],            // parsed from CSV
   questions: [],         // parsed from JSON

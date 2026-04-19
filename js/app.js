@@ -5,7 +5,7 @@ import { render as renderQuiz } from './steps/quiz.js';
 import { render as renderResults } from './steps/results.js';
 
 const steps = [renderModeSelect, renderPriorityRank, renderQuiz, renderResults];
-const stepNames = ['Mode', 'Priorities', 'Quiz', 'Results'];
+const stepNames = ['Home', 'Priorities', 'Quiz', 'Results'];
 let currentStep = 0;
 
 const appEl = document.getElementById('app');

@@ -133,7 +133,7 @@ export function calculateResults() {
       }
     }
 
-    // Industry match bonus (living mode)
+    // Industry match bonus
     if (effects.industryMatch && city.industries) {
       if (!city.industries.includes(effects.industryMatch)) {
         globalMult *= 0.7;
@@ -154,7 +154,7 @@ export function calculateResults() {
     let sumWeights = 0;
 
     for (const dim of state.dimensions) {
-      const baseWeight = state.mode === 'living' ? dim.livingWeight : dim.visitingWeight;
+      const baseWeight = dim.livingWeight;
       if (baseWeight === 0) continue;
 
       // Non-rankable dimensions get a neutral rank multiplier
@@ -172,12 +172,12 @@ export function calculateResults() {
 
     // Find strengths and weaknesses using effective (possibly inverted) scores
     const dimScores = state.dimensions
-      .filter(d => (state.mode === 'living' ? d.livingWeight : d.visitingWeight) > 0)
+      .filter(d => d.livingWeight > 0)
       .map(d => ({
         id: d.id,
         label: d.label,
         score: getCityDimScore(city, d.id, effects.inversions),
-        weight: (state.mode === 'living' ? d.livingWeight : d.visitingWeight) *
+        weight: d.livingWeight *
                 (d.rankable ? getRankMultiplier(rankOf[d.id] ?? 12) : 1.0) *
                 (effects.multipliers[d.id] || 1),
       }))

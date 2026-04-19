@@ -1,39 +1,30 @@
-import state from '../state.js';
 import { render as renderCompare } from './compare.js';
 
 export function render(container, onNext, onBack) {
   container.innerHTML = `
     <div class="step-content mode-select">
-      <h2>What are you looking for?</h2>
-      <p class="subtitle">Take a personalized quiz, or compare specific cities directly</p>
+      <h2>How do you want to get started?</h2>
+      <p class="subtitle">Take the quiz for a personalized ranking, or compare specific cities side-by-side.</p>
       <div class="mode-buttons">
-        <button class="mode-btn" data-mode="living">
-          <span class="mode-icon">🏠</span>
-          <span class="mode-label">Living</span>
-          <span class="mode-desc">Find a city to call home</span>
+        <button class="mode-btn" id="startQuizBtn">
+          <span class="mode-icon">📝</span>
+          <span class="mode-label">Start Quiz</span>
+          <span class="mode-desc">Rank your priorities and get your best-fit cities.</span>
         </button>
-        <button class="mode-btn" data-mode="visiting">
-          <span class="mode-icon">✈️</span>
-          <span class="mode-label">Visiting</span>
-          <span class="mode-desc">Find a city to explore</span>
+        <button class="mode-btn" id="compareCitiesBtn">
+          <span class="mode-icon">⚖️</span>
+          <span class="mode-label">Compare Cities</span>
+          <span class="mode-desc">See specific cities side-by-side across every dimension.</span>
         </button>
       </div>
-      <button class="mode-compare-btn" id="modeCompareBtn">
-        <span class="mode-compare-icon">⚖️</span>
-        <span class="mode-compare-text">Compare specific cities side-by-side</span>
-        <span class="mode-compare-arrow">→</span>
-      </button>
     </div>
   `;
 
-  container.querySelectorAll('.mode-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      state.mode = btn.dataset.mode;
-      onNext();
-    });
+  container.querySelector('#startQuizBtn').addEventListener('click', () => {
+    onNext();
   });
 
-  container.querySelector('#modeCompareBtn').addEventListener('click', () => {
+  container.querySelector('#compareCitiesBtn').addEventListener('click', () => {
     renderCompare(container, () => render(container, onNext, onBack));
   });
 }

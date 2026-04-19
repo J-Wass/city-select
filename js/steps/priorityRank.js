@@ -2,8 +2,7 @@ import state from '../state.js';
 
 export function render(container, onNext, onBack) {
   const rankable = state.dimensions.filter(d => d.rankable);
-  const weightKey = state.mode === 'living' ? 'livingWeight' : 'visitingWeight';
-  const sorted = [...rankable].sort((a, b) => b[weightKey] - a[weightKey]);
+  const sorted = [...rankable].sort((a, b) => b.livingWeight - a.livingWeight);
   state.rankOrder = sorted.map(d => d.id);
 
   const rankableCount = rankable.length;
@@ -43,6 +42,7 @@ export function render(container, onNext, onBack) {
       li.className = `rank-item ${tier.cls}`;
       li.innerHTML = `
         <span class="rank-pos">${i + 1}</span>
+        <button class="rank-drag" type="button" aria-label="Drag to reorder ${dim.label}">::</button>
         <span class="rank-label">${dim.label}</span>
         <span class="rank-desc">${dim.description}</span>
       `;
@@ -68,6 +68,10 @@ export function render(container, onNext, onBack) {
     Sortable.create(list, {
       animation: 150,
       ghostClass: 'rank-ghost',
+      handle: '.rank-drag',
+      delayOnTouchOnly: true,
+      delay: 160,
+      touchStartThreshold: 5,
       onEnd: updateAfterSort,
     });
   }

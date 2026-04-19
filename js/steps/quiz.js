@@ -1,8 +1,8 @@
 import state from '../state.js';
 
 export function render(container, onNext, onBack) {
-  // Filter questions by mode
-  const questions = state.questions.filter(q => q.modes.includes(state.mode));
+  // Keep the general + living-oriented question set for the main recommendation flow.
+  const questions = state.questions.filter(q => q.modes.includes('living'));
   let currentQ = 0;
 
   function renderQuestion() {
