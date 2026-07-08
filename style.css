@@ -1853,3 +1853,39 @@ h2 {
 .ac-row { cursor: pointer; }
 .ac-row:hover .ac-td { filter: brightness(1.25); }
 .ac-row:hover .ac-sticky { background: var(--border); filter: none; }
+
+/* Data coverage (skip-not-fake) */
+.coverage-badge {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background: rgba(255, 169, 77, 0.12);
+  border: 1px solid rgba(255, 169, 77, 0.35);
+  color: var(--important);
+  font-size: 0.7rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: help;
+}
+
+.modal-coverage {
+  margin-left: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--important);
+  text-transform: none;
+  letter-spacing: normal;
+  cursor: help;
+}
+
+.modal-dim-row.dim-missing .modal-dim-label,
+.modal-dim-row.dim-missing .modal-dim-val {
+  color: var(--text-muted);
+}
+
+.ac-missing .ac-num,
+.cmp-missing .cmp-val {
+  color: var(--text-muted);
+  font-weight: 400;
+}

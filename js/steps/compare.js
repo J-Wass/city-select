@@ -1,4 +1,5 @@
 import state from '../state.js';
+import { dimTooltip } from '../dimTooltips.js';
 
 const COLORS = ['#6c8cff', '#ffa94d', '#69db7c', '#ff6b6b', '#4dd4c6'];
 const MAX_COMPARE = 5;
@@ -152,16 +153,24 @@ export function render(container, onBack) {
           </thead>
           <tbody>
             ${dims.map(dim => {
-              const scores = selected.map(city => city.scores[dim.id] ?? 0);
-              const max = Math.max(...scores);
+              const scores = selected.map(city => city.scores[dim.id] ?? null);
+              const real = scores.filter(value => value != null);
+              const max = real.length ? Math.max(...real) : null;
               return `
                 <tr>
                   <td class="cmp-dim-td" title="${dim.description}">${dim.label}</td>
                   ${selected.map((city, i) => {
                     const score = scores[i];
-                    const isBest = score === max && scores.filter(value => value === max).length === 1;
+                    const tooltip = dimTooltip(city, dim);
+                    if (score == null) {
+                      return `
+                      <td class="cmp-score-td cmp-missing" title="${tooltip}">
+                        <span class="cmp-val">—</span>
+                      </td>`;
+                    }
+                    const isBest = score === max && real.filter(value => value === max).length === 1;
                     return `
-                      <td class="cmp-score-td${isBest ? ' cmp-best' : ''}" style="background:${cellBg(score)}">
+                      <td class="cmp-score-td${isBest ? ' cmp-best' : ''}" style="background:${cellBg(score)}" title="${tooltip}">
                         <span class="cmp-val">${score}</span>
                         <div class="cmp-bar-wrap">
                           <div class="cmp-bar" style="width:${score}%;background:${COLORS[i]}"></div>

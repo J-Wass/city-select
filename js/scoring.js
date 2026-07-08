@@ -18,10 +18,8 @@ function getRankMultiplier(position) {
 function getQuizEffects() {
   const multipliers = {};    // dimensionId -> cumulative multiplier
   const dealbreakers = [];   // dimension IDs
-  const globalPenalties = []; // { type, threshold, factor }
   const populationFilters = []; // { min?, max?, factor } — city size preference
   const inversions = new Set(); // dimension IDs to invert (100 - score)
-  const prefLabels = {};     // dimensionId -> user-friendly preference label
   const languageTags = new Set(); // user's spoken languages
   let climateMatch = null;
   let industryMatch = null;
@@ -44,9 +42,6 @@ function getQuizEffects() {
       if (effects.dealbreaker) {
         dealbreakers.push(effects.dealbreaker);
       }
-      if (effects.globalPenalty) {
-        globalPenalties.push(effects.globalPenalty);
-      }
       if (effects.populationFilter) {
         populationFilters.push(effects.populationFilter);
       }
@@ -54,9 +49,6 @@ function getQuizEffects() {
         for (const dim of effects.inversions) {
           inversions.add(dim);
         }
-      }
-      if (effects.prefLabel) {
-        Object.assign(prefLabels, effects.prefLabel);
       }
       if (effects.languageTag) {
         languageTags.add(effects.languageTag);
@@ -70,14 +62,17 @@ function getQuizEffects() {
     }
   }
 
-  return { multipliers, dealbreakers, globalPenalties, populationFilters, inversions, prefLabels, languageTags, climateMatch, industryMatch };
+  return { multipliers, dealbreakers, populationFilters, inversions, languageTags, climateMatch, industryMatch };
 }
 
 /**
  * Get a city's score for a dimension, respecting inversions.
+ * Returns null when the city has no real data for the dimension —
+ * callers skip it instead of scoring a made-up value.
  */
 function getCityDimScore(city, dimId, inversions) {
-  const raw = city.scores[dimId] ?? 50;
+  const raw = city.scores[dimId];
+  if (raw == null) return null;
   return inversions.has(dimId) ? (100 - raw) : raw;
 }
 
@@ -86,7 +81,6 @@ function getCityDimScore(city, dimId, inversions) {
  */
 export function calculateResults() {
   const effects = getQuizEffects();
-  state.prefLabels = effects.prefLabels;
 
   // Build rank lookup
   const rankOf = {};
@@ -109,15 +103,6 @@ export function calculateResults() {
     // Dealbreaker penalty: heavy multiplier per violation (city stays ranked, sinks to bottom)
     for (const _dim of violatedDealbreakers) {
       globalMult *= 0.15;
-    }
-
-    // Language barrier penalty
-    for (const pen of effects.globalPenalties) {
-      if (pen.type === 'languageBarrier') {
-        if ((city.scores.languageAccess ?? 100) < pen.threshold) {
-          globalMult *= pen.factor;
-        }
-      }
     }
 
     // Climate mismatch penalty
@@ -154,14 +139,16 @@ export function calculateResults() {
     let sumWeights = 0;
 
     for (const dim of state.dimensions) {
-      const baseWeight = dim.livingWeight;
+      const baseWeight = dim.weight;
       if (baseWeight === 0) continue;
 
       // Non-rankable dimensions get a neutral rank multiplier
+      const score = getCityDimScore(city, dim.id, effects.inversions);
+      if (score == null) continue; // no data — skip, don't fabricate
+
       const rankMult = dim.rankable ? getRankMultiplier(rankOf[dim.id] ?? 12) : 1.0;
       const quizMult = effects.multipliers[dim.id] || 1;
       const effectiveWeight = baseWeight * rankMult * quizMult;
-      const score = getCityDimScore(city, dim.id, effects.inversions);
 
       sumContributions += effectiveWeight * score;
       sumWeights += effectiveWeight;
@@ -170,20 +157,24 @@ export function calculateResults() {
     const rawScore = sumWeights > 0 ? sumContributions / sumWeights : 0;
     const finalScore = Math.round(rawScore * globalMult);
 
+    // Data coverage: how many dimensions have real data for this city
+    const coveredDims = state.dimensions.filter(d => city.scores[d.id] != null).length;
+
     // Find strengths and weaknesses using effective (possibly inverted) scores
     const dimScores = state.dimensions
-      .filter(d => d.livingWeight > 0)
+      .filter(d => d.weight > 0 && city.scores[d.id] != null)
       .map(d => ({
         id: d.id,
         label: d.label,
         score: getCityDimScore(city, d.id, effects.inversions),
-        weight: d.livingWeight *
+        weight: d.weight *
                 (d.rankable ? getRankMultiplier(rankOf[d.id] ?? 12) : 1.0) *
                 (effects.multipliers[d.id] || 1),
       }))
       .sort((a, b) => (b.score * b.weight) - (a.score * a.weight));
 
     const toItem = d => ({
+      id: d.id,
       label: d.label,
       score: Math.round(d.score),
       rankPos: rankOf[d.id] !== undefined ? rankOf[d.id] + 1 : null,
@@ -209,10 +200,10 @@ export function calculateResults() {
       strengths,
       weaknesses,
       violatedDealbreakers,
+      coverage: { covered: coveredDims, total: state.dimensions.length },
     });
   }
 
   scored.sort((a, b) => b.score - a.score);
-  state.results = scored;
   return scored;
 }

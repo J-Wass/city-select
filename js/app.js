@@ -67,9 +67,11 @@ async function loadData() {
     label: row.label,
     description: row.description,
     level: row.level,
-    livingWeight: Number(row.livingWeight),
-    visitingWeight: Number(row.visitingWeight),
+    weight: Number(row.weight),
     rankable: row.rankable !== 'false',
+    source: row.source || '',
+    highLabel: row.highLabel || '',
+    lowLabel: row.lowLabel || '',
   }));
 
   // Parse cities — score columns are everything after 'industries'
@@ -88,7 +90,10 @@ async function loadData() {
     nickname: row.nickname || '',
     lat: Number(row.lat) || 0,
     lon: Number(row.lon) || 0,
-    scores: Object.fromEntries(dimensionIds.map(id => [id, Number(row[id]) || 0])),
+    // Empty cell = no real source data for this dimension; the scoring
+    // engine skips null dimensions rather than treating them as 0.
+    scores: Object.fromEntries(dimensionIds.map(id =>
+      [id, row[id] === '' || row[id] === undefined ? null : Number(row[id])])),
   }));
 
   state.questions = questionsResp;

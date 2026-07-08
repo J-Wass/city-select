@@ -1,0 +1,402 @@
+City,Country,Crime Index
+Pretoria,South Africa,81.7
+Caracas,Venezuela,81.5
+Pietermaritzburg,South Africa,81.3
+Port Moresby,Papua New Guinea,81.3
+Johannesburg,South Africa,80.8
+Durban,South Africa,80.5
+San Pedro Sula,Honduras,79.5
+Port Elizabeth,South Africa,78.3
+Memphis,United States,77.8
+Salvador,Brazil,76.5
+Port of Spain,Trinidad And Tobago,76.3
+Fortaleza,Brazil,75.9
+Rio de Janeiro,Brazil,75.4
+Recife,Brazil,75.0
+Guayaquil,Ecuador,74.7
+Cape Town,South Africa,73.6
+Detroit,United States,72.8
+Tijuana,Mexico,71.3
+Baltimore,United States,71.1
+Cali,Colombia,70.9
+Albuquerque,United States,70.9
+Porto Alegre,Brazil,70.4
+Saint Louis,United States,70.1
+Lima,Peru,70.1
+Sao Paulo,Brazil,69.8
+Whangarei,New Zealand,69.7
+Kingston,Jamaica,69.4
+Lagos,Nigeria,69.1
+Damascus,Syria,68.7
+Oakland,United States,68.6
+New Orleans,United States,67.9
+Windhoek,Namibia,67.5
+Marseille,France,67.0
+San Juan,Puerto Rico,67.0
+Santo Domingo,Dominican Republic,66.8
+Bogota,Colombia,66.7
+Alice Springs,Australia,66.4
+Rockhampton,Australia,66.3
+Mexico City,Mexico,66.2
+Milwaukee,United States,65.6
+Philadelphia,United States,65.4
+Chicago,United States,65.2
+Campinas,Brazil,64.8
+Manila,Philippines,64.6
+Surrey,Canada,64.4
+Atlanta,United States,64.3
+Santiago,Chile,64.1
+Birmingham,United Kingdom,64.0
+Quezon City,Philippines,63.7
+Lethbridge,Canada,63.1
+Darwin,Australia,63.1
+Quito,Ecuador,63.1
+Buenos Aires,Argentina,63.0
+Houston,United States,62.9
+Grenoble,France,62.7
+Dhaka,Bangladesh,62.5
+Sudbury,Canada,62.5
+Guadalajara,Mexico,62.4
+Cairns,Australia,62.3
+Naples,Italy,62.3
+Coventry,United Kingdom,62.1
+Harare,Zimbabwe,61.8
+Kelowna,Canada,61.6
+Townsville,Australia,61.2
+Brantford,Canada,61.0
+San Francisco,United States,60.5
+Montpellier,France,60.4
+Winnipeg,Canada,60.2
+Oshawa,Canada,60.2
+Sault Ste. Marie,Canada,59.9
+Cordoba,Argentina,59.7
+Washington,United States,59.7
+Indianapolis,United States,59.6
+Curitiba,Brazil,59.5
+Belo Horizonte,Brazil,59.4
+Lyon,France,59.2
+Kuala Lumpur,Malaysia,59.1
+Nairobi,Kenya,59.1
+Delhi,India,59.0
+Bradford,United Kingdom,58.6
+Kansas City,United States,58.6
+Nantes,France,58.5
+Brasilia,Brazil,58.5
+Liege,Belgium,58.3
+Toowoomba,Australia,58.3
+Ghaziabad,India,58.2
+Portland,United States,58.1
+Puebla,Mexico,58.0
+Paris,France,57.9
+Karachi,Pakistan,57.6
+Tehran,Iran,57.2
+Montevideo,Uruguay,56.8
+Jacksonville,United States,56.4
+Minneapolis,United States,56.2
+San Jose,Costa Rica,55.9
+Ballarat,Australia,55.9
+Manchester,United Kingdom,55.9
+Brussels,Belgium,55.9
+Noida,India,55.7
+Hamilton,Canada,55.6
+Brampton,Canada,55.6
+Las Vegas,United States,55.4
+Seattle,United States,55.3
+London,United Kingdom,55.3
+Casablanca,Morocco,55.2
+Asuncion,Paraguay,55.2
+Hamilton,New Zealand,55.1
+Nice,France,55.1
+Athens,Greece,55.0
+Malmo,Sweden,54.9
+Odessa (Odesa),Ukraine,54.8
+Cancun,Mexico,54.5
+Kamloops,Canada,54.5
+Tucson,United States,54.4
+Amadora,Portugal,54.2
+Dublin,Ireland,54.1
+Medellin,Colombia,54.1
+Gurgaon,India,54.1
+Milan,Italy,54.0
+San Salvador,El Salvador,54.0
+Los Angeles,United States,53.8
+Dnipro,Ukraine,53.7
+Bangalore,India,53.7
+London,Canada,53.7
+Regina,Canada,53.5
+Phoenix,United States,53.3
+Miami,United States,53.3
+Baghdad,Iraq,53.2
+Nottingham,United Kingdom,53.1
+Almaty,Kazakhstan,52.9
+Nanaimo,Canada,52.9
+Jakarta,Indonesia,52.7
+Barcelona,Spain,52.1
+Rawalpindi,Pakistan,52.0
+Turin,Italy,52.0
+Ulaanbaatar,Mongolia,51.9
+Thessaloniki,Greece,51.8
+Dallas,United States,51.7
+Lille,France,51.1
+Bali,Indonesia,51.0
+New York,United States,50.8
+Algiers,Algeria,50.7
+Drogheda,Ireland,50.6
+Auckland,New Zealand,50.6
+Brescia,Italy,50.6
+San Miguel de Allende,Mexico,50.0
+Saskatoon,Canada,49.9
+Ho Chi Minh City,Vietnam,49.8
+Toulouse,France,49.8
+Cairo,Egypt,49.8
+Bari,Italy,49.8
+San Antonio,United States,49.6
+Bordeaux,France,49.6
+Addis Ababa,Ethiopia,49.6
+Phnom Penh,Cambodia,49.5
+Orlando,United States,49.5
+Sacramento,United States,49.4
+Moncton,Canada,49.3
+Belfast,United Kingdom,49.2
+Minsk,Belarus,49.1
+Raleigh,United States,49.0
+Charlotte,United States,49.0
+Columbus,United States,49.0
+Cebu,Philippines,48.9
+Johor Bahru,Malaysia,48.9
+Bologna,Italy,48.8
+Bilbao,Spain,48.8
+Catania,Italy,48.7
+Bremen,Germany,48.6
+Tunis,Tunisia,48.4
+Denver,United States,48.1
+Istanbul,Turkey,48.0
+San Jose,United States,48.0
+Monterrey,Mexico,47.9
+Newcastle,Australia,47.8
+Indore,India,47.7
+Gold Coast,Australia,47.4
+Honolulu,United States,47.3
+Liverpool,United Kingdom,47.3
+Kharkiv,Ukraine,47.2
+Kolkata,India,46.9
+St.Catharines,Canada,46.8
+Edmonton,Canada,46.8
+Rome,Italy,46.7
+Beirut,Lebanon,46.7
+Panama City,Panama,46.5
+Windsor,Canada,46.4
+Stockholm,Sweden,46.2
+Palermo,Italy,46.1
+Constanta,Romania,46.0
+Cuenca,Ecuador,45.8
+Skopje,North Macedonia,45.8
+Gothenburg,Sweden,45.8
+Genoa,Italy,45.7
+Kiev (Kyiv),Ukraine,45.6
+Lucknow (Lakhnau),India,45.5
+Leeds,United Kingdom,45.5
+Frankfurt,Germany,45.5
+Hanover,Germany,45.3
+Brooklyn,United States,45.2
+Cologne,Germany,45.1
+Novosibirsk,Russia,45.1
+Pattaya,Thailand,45.1
+Florianopolis,Brazil,45.0
+Glasgow,United Kingdom,44.9
+Tampa,United States,44.8
+Christchurch,New Zealand,44.7
+Alexandria,Egypt,44.7
+Berlin,Germany,44.6
+Melbourne,Australia,44.3
+Kristiansand,Norway,44.2
+Austin,United States,44.1
+Mississauga,Canada,43.9
+Limerick,Ireland,43.9
+Mumbai,India,43.9
+Sarajevo,Bosnia,43.8
+Toronto,Canada,43.7
+Yekaterinburg,Russia,43.4
+Bristol,United Kingdom,43.3
+Colombo,Sri Lanka,43.1
+Kitchener,Canada,42.9
+Vancouver,Canada,42.8
+Vaughan,Canada,42.8
+Chandigarh,India,42.7
+Hyderabad,India,42.6
+Sheffield,United Kingdom,42.6
+Perth,Australia,42.2
+Florence,Italy,41.8
+Leipzig,Germany,41.6
+Strasbourg,France,41.5
+Chisinau,Moldova,41.3
+Pune,India,41.3
+Cambridge,United Kingdom,40.9
+Craiova,Romania,40.8
+Hamburg,Germany,40.7
+Boston,United States,40.3
+Chennai,India,40.2
+Tirana,Albania,40.1
+Limassol,Cyprus,40.0
+San Diego,United States,39.9
+Braga,Portugal,39.8
+Antwerp,Belgium,39.8
+Victoria,Canada,39.7
+Cardiff,United Kingdom,39.7
+Halifax,Canada,39.6
+Kingston,Canada,39.6
+Iloilo,Philippines,39.5
+Brighton,United Kingdom,39.5
+Pittsburgh,United States,39.4
+Ankara,Turkey,39.4
+Newcastle upon Tyne,United Kingdom,39.3
+Bonn,Germany,39.3
+Thiruvananthapuram,India,39.2
+Sofia,Bulgaria,38.6
+Novi Sad,Serbia,38.4
+Bangkok,Thailand,38.4
+Boise,United States,38.4
+Brisbane,Australia,38.2
+Calgary,Canada,37.9
+Makati,Philippines,37.7
+Belgrade,Serbia,37.7
+Lodz,Poland,37.6
+Saint Petersburg,Russia,37.5
+Valencia,Spain,37.5
+Queretaro (Santiago de Querétaro),Mexico,37.5
+Amman,Jordan,37.3
+Riga,Latvia,37.2
+Karlsruhe,Germany,37.2
+Cork,Ireland,37.1
+Lviv,Ukraine,37.1
+Irvine,United States,36.9
+Cagliari,Italy,36.9
+Kaunas,Lithuania,36.8
+Seville (Sevilla),Spain,36.7
+Madison,United States,36.6
+Navi Mumbai,India,36.5
+Aberdeen,United Kingdom,36.5
+Kathmandu,Nepal,36.4
+Alicante,Spain,36.4
+Palma de Mallorca,Spain,36.4
+Lahore,Pakistan,36.2
+Jerusalem,Israel,35.9
+Jaipur,India,35.7
+Salt Lake City,United States,35.6
+Moscow,Russia,35.0
+Iasi,Romania,34.8
+Varna,Bulgaria,34.3
+Oslo,Norway,34.3
+Puerto Vallarta,Mexico,34.2
+Hobart,Australia,34.1
+Dusseldorf,Germany,34.1
+Rabat,Morocco,34.0
+Stuttgart,Germany,34.0
+Guelph,Canada,33.8
+Sydney,Australia,33.8
+Porto,Portugal,33.8
+Hanoi,Vietnam,33.8
+Budapest,Hungary,33.6
+Nuremberg,Germany,33.4
+Wellington,New Zealand,33.4
+Surat,India,33.4
+Izmir,Turkey,33.3
+Basel,Switzerland,33.3
+Astana (Nur-Sultan),Kazakhstan,33.3
+Adelaide,Australia,33.1
+Montreal,Canada,33.0
+Osaka,Japan,33.0
+Lisbon,Portugal,32.9
+Nicosia,Cyprus,32.2
+Malaga,Spain,31.8
+Dresden,Germany,31.8
+Ahmedabad,India,31.6
+Lund,Sweden,31.6
+Freiburg im Breisgau,Germany,31.4
+Gdansk,Poland,31.2
+Galway,Ireland,31.0
+San Sebastian,Spain,30.9
+Ottawa,Canada,30.9
+Islamabad,Pakistan,30.8
+Split,Croatia,30.5
+Vadodara,India,30.4
+Edinburgh,United Kingdom,30.3
+Bratislava,Slovakia,30.3
+Baku,Azerbaijan,30.1
+Rotterdam,Netherlands,30.0
+Amsterdam,Netherlands,30.0
+Geneva,Switzerland,29.5
+Vienna,Austria,29.4
+Bursa,Turkey,29.4
+Vilnius,Lithuania,29.2
+Antalya,Turkey,29.1
+Madrid,Spain,29.0
+Penang,Malaysia,28.9
+Lausanne,Switzerland,28.8
+Davao,Philippines,28.8
+Kuwait City,Kuwait,28.8
+Burlington,Canada,28.6
+Stavanger,Norway,28.5
+Canberra,Australia,28.5
+Luxembourg,Luxembourg,28.5
+Guangzhou,China,28.4
+Bucharest,Romania,28.4
+Nizhny Novgorod,Russia,28.0
+Poznan,Poland,27.7
+Graz,Austria,27.5
+Bern,Switzerland,27.4
+Trieste,Italy,27.3
+Utrecht,Netherlands,26.5
+Shanghai,China,26.5
+Copenhagen,Denmark,26.3
+Tel Aviv-Yafo,Israel,26.2
+Zaragoza (Saragossa),Spain,26.1
+Tbilisi,Georgia,26.0
+Timisoara,Romania,25.8
+Tashkent,Uzbekistan,25.8
+Mangalore,India,25.6
+Beijing,China,25.6
+Seoul,South Korea,25.4
+Brasov,Romania,25.4
+Warsaw,Poland,25.3
+Wroclaw,Poland,25.2
+Helsinki,Finland,25.1
+Bergen,Norway,25.1
+Krakow (Cracow),Poland,25.1
+Jeddah (Jiddah),Saudi Arabia,24.9
+Eskisehir,Turkey,24.9
+Gent,Belgium,24.8
+Brno,Czech Republic,24.8
+Prague,Czech Republic,24.7
+Reykjavik,Iceland,24.6
+Riyadh,Saudi Arabia,24.6
+Shenzhen,China,24.5
+Tokyo,Japan,24.1
+Zurich,Switzerland,24.1
+Groningen,Netherlands,23.9
+Merida,Mexico,23.9
+Rijeka,Croatia,23.1
+Tartu,Estonia,22.6
+Cluj-Napoca,Romania,22.5
+Quebec City,Canada,22.3
+Singapore,Singapore,22.3
+Eindhoven,Netherlands,22.2
+Yerevan,Armenia,22.1
+Chiang Mai,Thailand,22.0
+Trondheim,Norway,21.9
+Tampere,Finland,21.8
+Ljubljana,Slovenia,21.8
+Hong Kong,Hong Kong,21.8
+Munich,Germany,21.7
+Tallinn,Estonia,21.7
+Lugano,Switzerland,21.7
+Zagreb,Croatia,21.6
+The Hague (Den Haag),Netherlands,21.1
+Muscat,Oman,18.6
+Taipei,Taiwan,16.6
+Dubai,United Arab Emirates,16.2
+Doha,Qatar,15.4
+Sharjah,United Arab Emirates,15.3
+Ras al-Khaimah,United Arab Emirates,14.6
+Abu Dhabi,United Arab Emirates,11.4
+Ajman,United Arab Emirates,11.2

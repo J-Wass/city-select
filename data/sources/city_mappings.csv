@@ -8,7 +8,7 @@ toronto,Toronto,Canada,Toronto,Canada
 berlin,Berlin,Germany,Berlin,Germany
 singapore,Singapore,Singapore,Singapore,Singapore
 mexicoCity,Mexico City,Mexico,Mexico City,Mexico
-saoPaulo,São Paulo,Brazil,São Paulo,Brazil
+saoPaulo,Sao Paulo,Brazil,São Paulo,Brazil
 amsterdam,Amsterdam,Netherlands,Amsterdam,Netherlands
 barcelona,Barcelona,Spain,Barcelona,Spain
 bangkok,Bangkok,Thailand,Bangkok,Thailand
@@ -28,7 +28,7 @@ stockholm,Stockholm,Sweden,Stockholm,Sweden
 zurich,Zurich,Switzerland,Zurich,Switzerland
 hanoi,Hanoi,Vietnam,Hanoi,Vietnam
 cairo,Cairo,Egypt,Cairo,Egypt
-bogota,Bogotá,Colombia,Bogotá,Colombia
+bogota,Bogota,Colombia,Bogotá,Colombia
 kualaLumpur,Kuala Lumpur,Malaysia,Kuala Lumpur,Malaysia
 rome,Rome,Italy,Rome,Italy
 nairobi,Nairobi,Kenya,Nairobi,Kenya
@@ -48,7 +48,7 @@ marrakech,Marrakech,Morocco,Marrakech,Morocco
 reykjavik,Reykjavik,Iceland,Reykjavik,Iceland
 denver,Denver,United States,Denver,United States
 milanItaly,Milan,Italy,Milan,Italy
-washingtonDC,Washington DC,United States,Washington DC,United States
+washingtonDC,Washington,United States,Washington DC,United States
 madrid,Madrid,Spain,Madrid,Spain
 brussels,Brussels,Belgium,Brussels,Belgium
 warsaw,Warsaw,Poland,Warsaw,Poland
@@ -56,10 +56,10 @@ oslo,Oslo,Norway,Oslo,Norway
 edinburgh,Edinburgh,United Kingdom,Edinburgh,United Kingdom
 munich,Munich,Germany,Munich,Germany
 porto,Porto,Portugal,Porto,Portugal
-seville,Seville,Spain,Seville,Spain
+seville,Seville (Sevilla),Spain,Seville,Spain
 florence,Florence,Italy,Florence,Italy
 naples,Naples,Italy,Naples,Italy
-krakow,Kraków,Poland,Kraków,Poland
+krakow,Krakow (Cracow),Poland,Kraków,Poland
 dubrovnik,Dubrovnik,Croatia,Dubrovnik,Croatia
 tallinn,Tallinn,Estonia,Tallinn,Estonia
 riga,Riga,Latvia,Riga,Latvia
@@ -72,7 +72,7 @@ geneva,Geneva,Switzerland,Geneva,Switzerland
 lyon,Lyon,France,Lyon,France
 gothenburg,Gothenburg,Sweden,Gothenburg,Sweden
 rotterdam,Rotterdam,Netherlands,Rotterdam,Netherlands
-luxembourg,Luxembourg City,Luxembourg,Luxembourg City,Luxembourg
+luxembourg,Luxembourg,Luxembourg,Luxembourg City,Luxembourg
 bratislava,Bratislava,Slovakia,Bratislava,Slovakia
 thessaloniki,Thessaloniki,Greece,Thessaloniki,Greece
 valletta,Valletta,Malta,Valletta,Malta
@@ -81,11 +81,11 @@ cluj,Cluj-Napoca,Romania,Cluj-Napoca,Romania
 nicosia,Nicosia,Cyprus,Nicosia,Cyprus
 beijing,Beijing,China,Beijing,China
 shanghai,Shanghai,China,Shanghai,China
-hongKong,Hong Kong,China,Hong Kong,China
+hongKong,Hong Kong,Hong Kong,Hong Kong,China
 shenzhen,Shenzhen,China,Shenzhen,China
 chengdu,Chengdu,China,Chengdu,China
 bangalore,Bangalore,India,Bangalore,India
-newDelhi,New Delhi,India,New Delhi,India
+newDelhi,Delhi,India,New Delhi,India
 kolkata,Kolkata,India,Kolkata,India
 hoChiMinhCity,Ho Chi Minh City,Vietnam,Ho Chi Minh City,Vietnam
 jakarta,Jakarta,Indonesia,Jakarta,Indonesia
@@ -107,19 +107,19 @@ ulaanbaatar,Ulaanbaatar,Mongolia,Ulaanbaatar,Mongolia
 macau,Macau,China,Macau,China
 hyderabad,Hyderabad,India,Hyderabad,India
 guangzhou,Guangzhou,China,Guangzhou,China
-cebu,Cebu City,Philippines,Cebu City,Philippines
+cebu,Cebu,Philippines,Cebu City,Philippines
 bali,Bali,Indonesia,Bali,Indonesia
-miami,Miami,USA,Miami,USA
-seattle,Seattle,USA,Seattle,USA
-boston,Boston,USA,Boston,USA
-atlanta,Atlanta,USA,Atlanta,USA
-houston,Houston,USA,Houston,USA
-dallas,Dallas,USA,Dallas,USA
-portland,Portland,USA,Portland,USA
-minneapolis,Minneapolis,USA,Minneapolis,USA
-newOrleans,New Orleans,USA,New Orleans,USA
-philadelphia,Philadelphia,USA,Philadelphia,USA
-phoenix,Phoenix,USA,Phoenix,USA
+miami,Miami,United States,Miami,United States
+seattle,Seattle,United States,Seattle,United States
+boston,Boston,United States,Boston,United States
+atlanta,Atlanta,United States,Atlanta,United States
+houston,Houston,United States,Houston,United States
+dallas,Dallas,United States,Dallas,United States
+portland,Portland,United States,Portland,United States
+minneapolis,Minneapolis,United States,Minneapolis,United States
+newOrleans,New Orleans,United States,New Orleans,United States
+philadelphia,Philadelphia,United States,Philadelphia,United States
+phoenix,Phoenix,United States,Phoenix,United States
 calgary,Calgary,Canada,Calgary,Canada
 ottawa,Ottawa,Canada,Ottawa,Canada
 lima,Lima,Peru,Lima,Peru
@@ -137,11 +137,11 @@ cartagena,Cartagena,Colombia,Cartagena,Colombia
 curitiba,Curitiba,Brazil,Curitiba,Brazil
 asuncion,Asuncion,Paraguay,Asuncion,Paraguay
 laPaz,La Paz,Bolivia,La Paz,Bolivia
-lasVegas,Las Vegas,USA,Las Vegas,USA
-sanDiego,San Diego,USA,San Diego,USA
-telAviv,Tel Aviv,Israel,Tel Aviv,Israel
+lasVegas,Las Vegas,United States,Las Vegas,United States
+sanDiego,San Diego,United States,San Diego,United States
+telAviv,Tel Aviv-Yafo,Israel,Tel Aviv,Israel
 riyadh,Riyadh,Saudi Arabia,Riyadh,Saudi Arabia
-abuDhabi,Abu Dhabi,UAE,Abu Dhabi,UAE
+abuDhabi,Abu Dhabi,United Arab Emirates,Abu Dhabi,United Arab Emirates
 doha,Doha,Qatar,Doha,Qatar
 muscat,Muscat,Oman,Muscat,Oman
 amman,Amman,Jordan,Amman,Jordan
@@ -169,7 +169,7 @@ nagoya,Nagoya,Japan,Nagoya,Japan
 sapporo,Sapporo,Japan,Sapporo,Japan
 hiroshima,Hiroshima,Japan,Hiroshima,Japan
 chongqing,Chongqing,China,Chongqing,China
-xian,Xian,China,Xian,China
+xian,Xi'an,China,Xian,China
 wuhan,Wuhan,China,Wuhan,China
 nanjing,Nanjing,China,Nanjing,China
 marseille,Marseille,France,Marseille,France
@@ -183,11 +183,11 @@ poznan,Poznan,Poland,Poznan,Poland
 beloHorizonte,Belo Horizonte,Brazil,Belo Horizonte,Brazil
 portoAlegre,Porto Alegre,Brazil,Porto Alegre,Brazil
 brasilia,Brasilia,Brazil,Brasilia,Brazil
-sanAntonio,San Antonio,USA,San Antonio,USA
-nashville,Nashville,USA,Nashville,USA
-charlotte,Charlotte,USA,Charlotte,USA
+sanAntonio,San Antonio,United States,San Antonio,United States
+nashville,Nashville,United States,Nashville,United States
+charlotte,Charlotte,United States,Charlotte,United States
 recife,Recife,Brazil,Recife,Brazil
-sanJuanPR,San Juan,USA,San Juan,USA
+sanJuanPR,San Juan,Puerto Rico,San Juan,United States
 algiers,Algiers,Algeria,Algiers,Algeria
 baghdad,Baghdad,Iraq,Baghdad,Iraq
 kampala,Kampala,Uganda,Kampala,Uganda
@@ -201,35 +201,35 @@ minsk,Minsk,Belarus,Minsk,Belarus
 tirana,Tirana,Albania,Tirana,Albania
 jerusalem,Jerusalem,Israel,Jerusalem,Israel
 frankfurt,Frankfurt,Germany,Frankfurt,Germany
-manchester,Manchester,England,Manchester,England
+manchester,Manchester,United Kingdom,Manchester,United Kingdom
 hangzhou,Hangzhou,China,Hangzhou,China
 varanasi,Varanasi,India,Varanasi,India
-liverpool,Liverpool,England,Liverpool,England
+liverpool,Liverpool,United Kingdom,Liverpool,United Kingdom
 salzburg,Salzburg,Austria,Salzburg,Austria
-detroit,Detroit,USA,Detroit,USA
-kyiv,Kyiv,Ukraine,Kyiv,Ukraine
+detroit,Detroit,United States,Detroit,United States
+kyiv,Kiev (Kyiv),Ukraine,Kyiv,Ukraine
 chennai,Chennai,India,Chennai,India
-sanjoseca,San Jose,USA,San Jose,USA
+sanjoseca,San Jose,United States,San Jose,United States
 antwerp,Antwerp,Belgium,Antwerp,Belgium
-oakland,Oakland,United States,Oakland,USA
-fortWorth,Fort Worth,United States,Fort Worth,USA
-baltimore,Baltimore,United States,Baltimore,USA
-columbus,Columbus,United States,Columbus,USA
-honolulu,Honolulu,United States,Honolulu,USA
-memphis,Memphis,United States,Memphis,USA
-milwaukee,Milwaukee,United States,Milwaukee,USA
-kansasCity,Kansas City,United States,Kansas City,USA
-indianapolis,Indianapolis,United States,Indianapolis,USA
-raleigh,Raleigh,United States,Raleigh,USA
-jacksonville,Jacksonville,United States,Jacksonville,USA
-saltLakeCity,Salt Lake City,United States,Salt Lake City,USA
+oakland,Oakland,United States,Oakland,United States
+fortWorth,Fort Worth,United States,Fort Worth,United States
+baltimore,Baltimore,United States,Baltimore,United States
+columbus,Columbus,United States,Columbus,United States
+honolulu,Honolulu,United States,Honolulu,United States
+memphis,Memphis,United States,Memphis,United States
+milwaukee,Milwaukee,United States,Milwaukee,United States
+kansasCity,Kansas City,United States,Kansas City,United States
+indianapolis,Indianapolis,United States,Indianapolis,United States
+raleigh,Raleigh,United States,Raleigh,United States
+jacksonville,Jacksonville,United States,Jacksonville,United States
+saltLakeCity,Salt Lake City,United States,Salt Lake City,United States
 venice,Venice,Italy,Venice,Italy
 toulouse,Toulouse,France,Toulouse,France
 wroclaw,Wroclaw,Poland,Wroclaw,Poland
 birmingham,Birmingham,United Kingdom,Birmingham,United Kingdom
 palermo,Palermo,Italy,Palermo,Italy
 malaga,Malaga,Spain,Malaga,Spain
-jeddah,Jeddah,Saudi Arabia,Jeddah,Saudi Arabia
+jeddah,Jeddah (Jiddah),Saudi Arabia,Jeddah,Saudi Arabia
 alexandria,Alexandria,Egypt,Alexandria,Egypt
 chiangMai,Chiang Mai,Thailand,Chiang Mai,Thailand
 jaipur,Jaipur,India,Jaipur,India

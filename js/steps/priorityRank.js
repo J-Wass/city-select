@@ -2,7 +2,7 @@ import state from '../state.js';
 
 export function render(container, onNext, onBack) {
   const rankable = state.dimensions.filter(d => d.rankable);
-  const sorted = [...rankable].sort((a, b) => b.livingWeight - a.livingWeight);
+  const sorted = [...rankable].sort((a, b) => b.weight - a.weight);
   state.rankOrder = sorted.map(d => d.id);
 
   const rankableCount = rankable.length;

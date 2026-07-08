@@ -5,7 +5,6 @@ const state = {
   questions: [],         // parsed from JSON
   rankOrder: [],         // dimension IDs in user-ranked order
   quizAnswers: {},       // { questionId: selectedOptionIndex(es) }
-  results: [],           // scored city list
 };
 
 export default state;

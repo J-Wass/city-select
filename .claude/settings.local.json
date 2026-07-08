@@ -20,7 +20,23 @@
       "Bash(python sources/download.py --skip-climate)",
       "Bash(python -c ':*)",
       "Bash(python:*)",
-      "Bash(grep -v \"^$\")"
+      "Bash(grep -v \"^$\")",
+      "Bash(where claude *)",
+      "Bash(claude --version)",
+      "PowerShell([Environment]::SetEnvironmentVariable\\(\"Path\", $env:Path + \";$env:USERPROFILE\\\\.local\\\\bin\", \"User\"\\))",
+      "Bash(notepad *)",
+      "Bash(echo \"\\(exit $? — 1 means none found\\)\")",
+      "Bash(node --input-type=module -e ' *)",
+      "Bash(echo '{\"type\":\"module\"}')",
+      "Bash(rm package.json)",
+      "WebFetch(domain:atlas.itdp.org)",
+      "Bash(awk '{print $NF, \"\\(\"$5\" bytes\\)\"}')",
+      "Bash(PYTHONIOENCODING=utf-8 python -c \"import download; download.download_climate\\(\\)\")",
+      "Bash(PYTHONIOENCODING=utf-8 python *)",
+      "Bash(grep -oiE '\\(href|src|data-[a-z]+\\)=\"[^\"]{10,150}\"' /c/Users/jonah/AppData/Local/Temp/claude/C--Users-jonah-Desktop-city-select/88f77626-524b-4d23-af61-5db054e19767/scratchpad/who2024.html)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }

@@ -1,5 +1,6 @@
 import { calculateResults } from '../scoring.js';
 import { getCityMapSVG } from '../cityMaps.js';
+import { dimTooltip, dimById } from '../dimTooltips.js';
 import state from '../state.js';
 
 function formatPop(n) {
@@ -384,17 +385,17 @@ function whyText(item) {
 function weatherRow(city) {
   const s = city.scores;
   const bars = [
-    { label: 'Sun',    val: s.sunshine,     cls: 'weather-sun',    lo: 'overcast', hi: 'sunny' },
-    { label: 'Rain',   val: s.rainfall,     cls: 'weather-rain',   lo: 'dry',      hi: 'rainy' },
-    { label: 'Winter', val: s.winterWarmth, cls: 'weather-winter', lo: 'harsh',    hi: 'mild' },
-    { label: 'Humid',  val: s.humidity,     cls: 'weather-humid',  lo: 'arid',     hi: 'humid' },
+    { id: 'sunshine',     label: 'Sun',    val: s.sunshine,     cls: 'weather-sun',    lo: 'overcast', hi: 'sunny' },
+    { id: 'rainfall',     label: 'Rain',   val: s.rainfall,     cls: 'weather-rain',   lo: 'dry',      hi: 'rainy' },
+    { id: 'winterWarmth', label: 'Winter', val: s.winterWarmth, cls: 'weather-winter', lo: 'harsh',    hi: 'mild' },
+    { id: 'humidity',     label: 'Humid',  val: s.humidity,     cls: 'weather-humid',  lo: 'arid',     hi: 'humid' },
   ];
   return `
     <div class="city-weather">
       <span class="climate-badge climate-${city.climate}">${city.climate}</span>
       <div class="weather-bars">
         ${bars.map(b => `
-          <div class="weather-bar-group">
+          <div class="weather-bar-group" title="${dimTooltip(city, dimById(b.id))}">
             <div class="weather-bar-header">
               <span class="weather-label">${b.label}</span>
               <span class="weather-val">${b.val}</span>
@@ -412,12 +413,14 @@ function weatherRow(city) {
   `;
 }
 
-function dimRow(item, type) {
+function dimRow(item, type, city) {
   const why = whyText(item);
+  const dim = dimById(item.id);
+  const tooltip = city && dim ? dimTooltip(city, dim) : item.label;
   return `
-    <div class="dim-row ${type}">
+    <div class="dim-row ${type}" title="${tooltip}">
       <div class="dim-label-col">
-        <span class="dim-name" title="${item.label}">${item.label}</span>
+        <span class="dim-name" title="${tooltip}">${item.label}</span>
         ${why ? `<span class="dim-why">${why}</span>` : ''}
       </div>
       <div class="dim-bar-wrap">
@@ -439,9 +442,9 @@ function computeStatRanks() {
   };
 }
 
-function climateScale(label, lo, hi, val, fromColor, toColor) {
+function climateScale(label, lo, hi, val, fromColor, toColor, tooltip = '') {
   return `
-    <div class="cs-row">
+    <div class="cs-row" ${tooltip ? `title="${tooltip}"` : ''}>
       <span class="cs-label">${label}</span>
       <div class="cs-track-wrap">
         <div class="cs-track" style="background:linear-gradient(to right,${fromColor},${toColor})">
@@ -488,7 +491,7 @@ function buildModal(container) {
             </div>
           </div>
           <div class="modal-right-panel">
-            <div class="modal-section-heading">Dimensions</div>
+            <div class="modal-section-heading modal-dims-heading">Dimensions</div>
             <div class="modal-dims"></div>
           </div>
         </div>
@@ -563,12 +566,18 @@ function showCityModal(modal, result, matchRank, statRanks) {
   modal.querySelector('.modal-climate-badge-wrap').innerHTML =
     `<span class="climate-badge climate-${city.climate}">${city.climate}</span>`;
   modal.querySelector('.modal-climate-scales').innerHTML =
-    climateScale('Temperature', 'Cold', 'Hot',     sc.winterWarmth, '#7bb8e8', '#e87a3a') +
-    climateScale('Humidity',    'Dry',  'Humid',   sc.humidity,     '#c9b992', '#6aadca') +
-    climateScale('Sunshine',    'Grey', 'Sunny',   sc.sunshine,     '#8899aa', '#f5c842') +
-    climateScale('Rainfall',    'Dry',  'Rainy',   sc.rainfall,     '#c9b992', '#4ea3d4');
+    climateScale('Temperature', 'Cold', 'Hot',   sc.winterWarmth, '#7bb8e8', '#e87a3a', dimTooltip(city, dimById('winterWarmth'))) +
+    climateScale('Humidity',    'Dry',  'Humid', sc.humidity,     '#c9b992', '#6aadca', dimTooltip(city, dimById('humidity'))) +
+    climateScale('Sunshine',    'Grey', 'Sunny', sc.sunshine,     '#8899aa', '#f5c842', dimTooltip(city, dimById('sunshine'))) +
+    climateScale('Rainfall',    'Dry',  'Rainy', sc.rainfall,     '#c9b992', '#4ea3d4', dimTooltip(city, dimById('rainfall')));
 
-  // Dimensions
+  // Dimensions (+ coverage note when some lack real data)
+  const cov = result.coverage;
+  modal.querySelector('.modal-dims-heading').innerHTML =
+    cov && cov.covered < cov.total
+      ? `Dimensions <span class="modal-coverage" title="Missing dimensions are skipped in scoring, not guessed">${cov.covered}/${cov.total} with data</span>`
+      : 'Dimensions';
+
   const rankIndex = {};
   state.rankOrder.forEach((id, i) => { rankIndex[id] = i; });
   const dimsSorted = [...state.dimensions].sort((a, b) =>
@@ -576,13 +585,26 @@ function showCityModal(modal, result, matchRank, statRanks) {
   );
 
   modal.querySelector('.modal-dims').innerHTML = dimsSorted.map(d => {
-    const score = city.scores[d.id] ?? 0;
+    const score = city.scores[d.id];
+    const rankPos = rankIndex[d.id] !== undefined ? rankIndex[d.id] + 1 : null;
+    const rankBadge = rankPos ? `<span class="modal-rank-badge">#${rankPos}</span>` : '';
+    const tooltip = dimTooltip(city, d);
+
+    if (score == null) {
+      return `
+      <div class="modal-dim-row dim-missing" title="${tooltip}">
+        <div class="modal-dim-info">
+          <div class="modal-dim-header">${rankBadge}<span class="modal-dim-label">${d.label}</span></div>
+          <span class="modal-dim-desc">No ${d.source} data for this city — skipped in scoring</span>
+        </div>
+        <div class="modal-bar-wrap"></div>
+        <span class="modal-dim-val">—</span>
+      </div>`;
+    }
+
     const isStrength = result.strengths.some(s => s.label === d.label);
     const isWeakness = result.weaknesses.some(w => w.label === d.label);
     const barClass = isStrength ? 'good' : isWeakness ? 'bad' : '';
-
-    const rankPos = rankIndex[d.id] !== undefined ? rankIndex[d.id] + 1 : null;
-    const rankBadge = rankPos ? `<span class="modal-rank-badge">#${rankPos}</span>` : '';
 
     let tag = '', contextDesc = d.description;
     if (isStrength) {
@@ -594,7 +616,7 @@ function showCityModal(modal, result, matchRank, statRanks) {
     }
 
     return `
-      <div class="modal-dim-row">
+      <div class="modal-dim-row" title="${tooltip}">
         <div class="modal-dim-info">
           <div class="modal-dim-header">${rankBadge}<span class="modal-dim-label">${d.label}</span>${tag}</div>
           <span class="modal-dim-desc">${contextDesc}</span>
@@ -630,8 +652,9 @@ function buildAllCitiesSection(results, showModal) {
         const cmp = a.city.name.localeCompare(b.city.name);
         return sortAsc ? cmp : -cmp;
       }
-      va = sortKey === 'score' ? a.score : (a.city.scores[sortKey] ?? 0);
-      vb = sortKey === 'score' ? b.score : (b.city.scores[sortKey] ?? 0);
+      // Missing data sorts below any real score
+      va = sortKey === 'score' ? a.score : (a.city.scores[sortKey] ?? -1);
+      vb = sortKey === 'score' ? b.score : (b.city.scores[sortKey] ?? -1);
       return sortAsc ? va - vb : vb - va;
     });
   }
@@ -674,8 +697,14 @@ function buildAllCitiesSection(results, showModal) {
           <div class="ac-mini-bar" style="width:${r.score}%;background:var(--accent)"></div>
         </td>
         ${dims.map(d => {
-          const s = r.city.scores[d.id] ?? 0;
-          return `<td class="ac-td ac-dim-td" style="background:${cellBg(s)}">
+          const s = r.city.scores[d.id];
+          const tooltip = dimTooltip(r.city, d);
+          if (s == null) {
+            return `<td class="ac-td ac-dim-td ac-missing" title="${tooltip}">
+              <span class="ac-num">—</span>
+            </td>`;
+          }
+          return `<td class="ac-td ac-dim-td" style="background:${cellBg(s)}" title="${tooltip}">
             <span class="ac-num">${s}</span>
             <div class="ac-mini-bar" style="width:${s}%"></div>
           </td>`;
@@ -773,16 +802,19 @@ export function render(container, _onNext, onBack) {
                   <div class="score-fill" style="width: ${r.score}%"></div>
                 </div>
                 <span class="score-label">${r.score}% match</span>
+                ${r.coverage.covered < r.coverage.total
+                  ? `<span class="coverage-badge" title="Real data for ${r.coverage.covered} of ${r.coverage.total} dimensions — missing ones are skipped, not guessed">${r.coverage.covered}/${r.coverage.total} data</span>`
+                  : ''}
               </div>
               ${weatherRow(r.city)}
               <div class="result-columns">
                 <div class="strengths">
                   <strong>Strengths</strong>
-                  ${r.strengths.map(s => dimRow(s, 'good')).join('')}
+                  ${r.strengths.map(s => dimRow(s, 'good', r.city)).join('')}
                 </div>
                 <div class="weaknesses">
                   <strong>Weaknesses</strong>
-                  ${r.weaknesses.map(w => dimRow(w, 'bad')).join('')}
+                  ${r.weaknesses.map(w => dimRow(w, 'bad', r.city)).join('')}
                 </div>
               </div>
               <button class="btn-summary" data-city-id="${r.city.id}">All dimensions</button>
@@ -883,8 +915,6 @@ export function render(container, _onNext, onBack) {
   container.querySelector('#startOver').addEventListener('click', () => {
     state.quizAnswers = {};
     state.rankOrder = [];
-    state.results = [];
-    state.prefLabels = {};
     onBack(true);
   });
 }

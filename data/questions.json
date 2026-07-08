@@ -3,7 +3,6 @@
     "id": "climate",
     "text": "What climate type do you prefer?",
     "type": "single",
-    "modes": ["living", "visiting"],
     "options": [
       { "label": "Warm year-round — tropical or subtropical", "effects": { "climateMatch": "tropical,subtropical" } },
       { "label": "Four distinct seasons — real summers and winters", "effects": { "climateMatch": "continental" } },
@@ -17,7 +16,6 @@
     "text": "Any specific climate preferences? (pick all that apply)",
     "type": "multi",
     "maxSelect": 4,
-    "modes": ["living", "visiting"],
     "options": [
       { "label": "Lots of sunshine is essential", "effects": { "multipliers": { "sunshine": 1.5 } } },
       { "label": "Prefer dry — rain bothers me", "effects": { "inversions": ["rainfall"], "multipliers": { "rainfall": 1.5 } } },
@@ -33,21 +31,19 @@
     "id": "lifeStage",
     "text": "Who are you planning to live with?",
     "type": "single",
-    "modes": ["living"],
     "options": [
-      { "label": "Just me — flying solo", "effects": { "multipliers": { "nightlife": 1.2, "costOfLiving": 1.1 } } },
+      { "label": "Just me — flying solo", "effects": { "multipliers": { "costOfLiving": 1.1 } } },
       { "label": "Partner or spouse — no kids", "effects": { "multipliers": { "safety": 1.1, "affordability": 1.1 } } },
-      { "label": "Family with young children", "effects": { "multipliers": { "educationQuality": 1.8, "safety": 1.5, "healthcareQuality": 1.4, "affordability": 1.3, "airQuality": 1.3, "nightlife": 0.4 } } },
-      { "label": "Family with teenagers", "effects": { "multipliers": { "educationQuality": 1.5, "safety": 1.3, "culturalOfferings": 1.2, "affordability": 1.2 } } },
-      { "label": "Retiring abroad", "effects": { "multipliers": { "healthcareQuality": 1.8, "safety": 1.4, "airQuality": 1.3, "walkability": 1.3, "costOfLiving": 1.3, "jobMarket": 0.1, "nightlife": 0.4 } } },
-      { "label": "Student", "effects": { "multipliers": { "educationQuality": 1.5, "costOfLiving": 1.4, "nightlife": 1.2, "jobMarket": 0.3 } } }
+      { "label": "Family with young children", "effects": { "multipliers": { "educationQuality": 1.8, "safety": 1.5, "healthcareQuality": 1.4, "affordability": 1.3, "airQuality": 1.3 } } },
+      { "label": "Family with teenagers", "effects": { "multipliers": { "educationQuality": 1.5, "safety": 1.3, "affordability": 1.2 } } },
+      { "label": "Retiring abroad", "effects": { "multipliers": { "healthcareQuality": 1.8, "safety": 1.4, "airQuality": 1.3, "costOfLiving": 1.3 } } },
+      { "label": "Student", "effects": { "multipliers": { "educationQuality": 1.5, "costOfLiving": 1.4 } } }
     ]
   },
   {
     "id": "citySize",
     "text": "What scale of city suits you?",
     "type": "single",
-    "modes": ["living", "visiting"],
     "options": [
       { "label": "Megacity (5M+) — I love the energy and scale", "effects": { "populationFilter": { "min": 3000000, "factor": 0.8 } } },
       { "label": "Large city (500k–5M) — urban but navigable", "effects": { "populationFilter": { "min": 400000, "max": 6000000, "factor": 0.8 } } },
@@ -59,58 +55,39 @@
     "id": "workStyle",
     "text": "How do you work?",
     "type": "single",
-    "modes": ["living"],
     "options": [
-      { "label": "Fully remote — I can work from anywhere", "effects": { "multipliers": { "internetQuality": 1.5, "costOfLiving": 1.3, "jobMarket": 0.2 } } },
-      { "label": "Hybrid — split between home and office", "effects": { "multipliers": { "transitQuality": 1.2, "jobMarket": 1.1 } } },
-      { "label": "On-site — I need a strong local job market", "effects": { "multipliers": { "jobMarket": 1.5, "transitQuality": 1.2 } } },
-      { "label": "Student or not currently working", "effects": { "multipliers": { "costOfLiving": 1.3, "jobMarket": 0.2 } } },
-      { "label": "Retired", "effects": { "multipliers": { "jobMarket": 0.1 } } }
+      { "label": "Fully remote — I can work from anywhere", "effects": { "multipliers": { "internetQuality": 1.5, "costOfLiving": 1.3 } } },
+      { "label": "Hybrid — split between home and office", "effects": { "multipliers": { "economicOutlook": 1.2 } } },
+      { "label": "On-site — I need a strong local economy", "effects": { "multipliers": { "economicOutlook": 1.4 } } },
+      { "label": "Student or not currently working", "effects": { "multipliers": { "costOfLiving": 1.3 } } },
+      { "label": "Retired", "effects": {} }
     ]
   },
   {
     "id": "career",
     "text": "What's your career field?",
     "type": "single",
-    "modes": ["living"],
     "options": [
-      { "label": "Tech", "effects": { "industryMatch": "tech", "multipliers": { "jobMarket": 1.5, "internetQuality": 1.3 } } },
-      { "label": "Finance", "effects": { "industryMatch": "finance", "multipliers": { "jobMarket": 1.5, "economicOutlook": 1.3 } } },
-      { "label": "Creative / Arts", "effects": { "industryMatch": "creative", "multipliers": { "jobMarket": 1.3, "culturalOfferings": 1.3 } } },
-      { "label": "Media / Journalism", "effects": { "industryMatch": "media", "multipliers": { "jobMarket": 1.4, "languageAccess": 1.3, "pressFreedom": 1.3 } } },
-      { "label": "Startup / Entrepreneurship", "effects": { "industryMatch": "startup", "multipliers": { "jobMarket": 1.4, "internetQuality": 1.3, "economicOutlook": 1.3 } } },
-      { "label": "Trade / Logistics", "effects": { "industryMatch": "trade", "multipliers": { "jobMarket": 1.4, "transitQuality": 1.3, "economicOutlook": 1.2 } } },
-      { "label": "Tourism & Hospitality", "effects": { "industryMatch": "tourism", "multipliers": { "jobMarket": 1.3, "foodScene": 1.2, "culturalOfferings": 1.2 } } },
-      { "label": "Fashion / Luxury", "effects": { "industryMatch": "fashion", "multipliers": { "jobMarket": 1.4, "culturalOfferings": 1.3 } } },
-      { "label": "Film & Entertainment", "effects": { "industryMatch": "film", "multipliers": { "jobMarket": 1.4, "culturalOfferings": 1.3, "nightlife": 1.2 } } },
-      { "label": "Healthcare / Medicine", "effects": { "multipliers": { "healthcareQuality": 1.5, "safety": 1.3, "jobMarket": 1.3 } } },
-      { "label": "Education / Academia", "effects": { "multipliers": { "educationQuality": 1.5, "culturalOfferings": 1.2, "jobMarket": 1.2 } } },
-      { "label": "Government / Policy", "effects": { "multipliers": { "govProgressiveness": 1.2, "corruption": 1.3, "jobMarket": 1.2 } } },
-      { "label": "Energy / Mining", "effects": { "industryMatch": "energy", "multipliers": { "jobMarket": 1.4, "economicOutlook": 1.2 } } },
+      { "label": "Tech", "effects": { "industryMatch": "tech", "multipliers": { "internetQuality": 1.3, "economicOutlook": 1.2 } } },
+      { "label": "Finance", "effects": { "industryMatch": "finance", "multipliers": { "economicOutlook": 1.3 } } },
+      { "label": "Creative / Arts", "effects": { "industryMatch": "creative" } },
+      { "label": "Media / Journalism", "effects": { "industryMatch": "media", "multipliers": { "languageAccess": 1.3, "pressFreedom": 1.3 } } },
+      { "label": "Startup / Entrepreneurship", "effects": { "industryMatch": "startup", "multipliers": { "internetQuality": 1.3, "economicOutlook": 1.3 } } },
+      { "label": "Trade / Logistics", "effects": { "industryMatch": "trade", "multipliers": { "economicOutlook": 1.2 } } },
+      { "label": "Tourism & Hospitality", "effects": { "industryMatch": "tourism" } },
+      { "label": "Fashion / Luxury", "effects": { "industryMatch": "fashion" } },
+      { "label": "Film & Entertainment", "effects": { "industryMatch": "film" } },
+      { "label": "Healthcare / Medicine", "effects": { "multipliers": { "healthcareQuality": 1.5, "safety": 1.3 } } },
+      { "label": "Education / Academia", "effects": { "multipliers": { "educationQuality": 1.5 } } },
+      { "label": "Government / Policy", "effects": { "multipliers": { "govProgressiveness": 1.2, "corruption": 1.3 } } },
+      { "label": "Energy / Mining", "effects": { "industryMatch": "energy", "multipliers": { "economicOutlook": 1.2 } } },
       { "label": "Not applicable", "effects": {} }
-    ]
-  },
-  {
-    "id": "tripPurpose",
-    "text": "What's the main purpose of your trip?",
-    "type": "single",
-    "modes": ["visiting"],
-    "options": [
-      { "label": "Relaxation & wellness", "effects": { "multipliers": { "safety": 1.4, "naturalBeauty": 1.4, "airQuality": 1.3, "walkability": 1.2 } } },
-      { "label": "Culture & history", "effects": { "multipliers": { "culturalOfferings": 1.5, "walkability": 1.3, "foodScene": 1.2 } } },
-      { "label": "Adventure & outdoors", "effects": { "multipliers": { "naturalBeauty": 1.5, "walkability": 1.3, "safety": 1.2 } } },
-      { "label": "Food & nightlife", "effects": { "multipliers": { "foodScene": 1.5, "nightlife": 1.5, "walkability": 1.2 } } },
-      { "label": "City exploration & sightseeing", "effects": { "multipliers": { "culturalOfferings": 1.3, "transitQuality": 1.3, "walkability": 1.3 } } },
-      { "label": "Beach & sun", "effects": { "multipliers": { "naturalBeauty": 1.4, "sunshine": 1.5, "winterWarmth": 1.3 } } },
-      { "label": "Business or conference", "effects": { "multipliers": { "internetQuality": 1.4, "transitQuality": 1.3, "safety": 1.2, "languageAccess": 1.2 } } },
-      { "label": "Festival or special event", "effects": { "multipliers": { "culturalOfferings": 1.4, "nightlife": 1.3, "transitQuality": 1.2 } } }
     ]
   },
   {
     "id": "budget",
     "text": "What's your budget level?",
     "type": "single",
-    "modes": ["living", "visiting"],
     "options": [
       { "label": "Very tight — cost is everything", "effects": { "multipliers": { "costOfLiving": 2.0, "affordability": 2.0 } } },
       { "label": "Budget-conscious", "effects": { "multipliers": { "costOfLiving": 1.5, "affordability": 1.5 } } },
@@ -124,7 +101,6 @@
     "text": "What languages do you speak?",
     "type": "multi",
     "maxSelect": 6,
-    "modes": ["living", "visiting"],
     "options": [
       { "label": "English", "effects": { "languageTag": "english" } },
       { "label": "Spanish", "effects": { "languageTag": "spanish" } },
@@ -145,7 +121,6 @@
     "id": "languageWillingness",
     "text": "How willing are you to learn a new language?",
     "type": "single",
-    "modes": ["living", "visiting"],
     "options": [
       { "label": "Very willing — I love learning languages", "effects": { "multipliers": { "languageAccess": 0.5 } } },
       { "label": "Somewhat willing for the right city", "effects": { "multipliers": { "languageAccess": 0.8 } } },
@@ -157,22 +132,15 @@
     "text": "Pick your top lifestyle priorities:",
     "type": "multi",
     "maxSelect": 5,
-    "modes": ["living", "visiting"],
     "options": [
-      { "label": "Walkable neighborhoods", "effects": { "multipliers": { "walkability": 1.5 } } },
-      { "label": "Great public transit", "effects": { "multipliers": { "transitQuality": 1.5 } } },
-      { "label": "Amazing food scene", "effects": { "multipliers": { "foodScene": 1.5 } } },
-      { "label": "Vibrant nightlife", "effects": { "multipliers": { "nightlife": 1.5 } } },
-      { "label": "Arts & culture", "effects": { "multipliers": { "culturalOfferings": 1.5 } } },
-      { "label": "Nature & outdoors access", "effects": { "multipliers": { "naturalBeauty": 1.5 } } },
       { "label": "Personal safety", "effects": { "multipliers": { "safety": 1.5 } } },
       { "label": "Clean air & environment", "effects": { "multipliers": { "airQuality": 1.4, "fossilFuelReliance": 1.2 } } },
       { "label": "Fast, reliable internet", "effects": { "multipliers": { "internetQuality": 1.5 } } },
       { "label": "Affordable living", "effects": { "multipliers": { "affordability": 1.5, "costOfLiving": 1.3 } } },
       { "label": "Sunny & warm weather", "effects": { "multipliers": { "sunshine": 1.5, "winterWarmth": 1.2 } } },
       { "label": "Easy expat or tourist experience", "effects": { "multipliers": { "languageAccess": 1.5, "visaEase": 1.3 } } },
-      { "label": "Green & eco-conscious city", "effects": { "multipliers": { "climateAction": 1.5, "fossilFuelReliance": 1.3 } } },
-      { "label": "Thriving economy & opportunity", "effects": { "multipliers": { "economicOutlook": 1.5, "jobMarket": 1.3 } } },
+      { "label": "Green & eco-conscious city", "effects": { "multipliers": { "fossilFuelReliance": 1.5 } } },
+      { "label": "Thriving economy & opportunity", "effects": { "multipliers": { "economicOutlook": 1.5 } } },
       { "label": "World-class healthcare", "effects": { "multipliers": { "healthcareQuality": 1.5 } } },
       { "label": "Good schools & education", "effects": { "multipliers": { "educationQuality": 1.5 } } }
     ]
@@ -181,7 +149,6 @@
     "id": "healthcare",
     "text": "How important is healthcare access to you?",
     "type": "single",
-    "modes": ["living"],
     "options": [
       { "label": "Critical — I have ongoing medical needs", "effects": { "multipliers": { "healthcareQuality": 2.0 } } },
       { "label": "Standard — want good coverage", "effects": { "multipliers": { "healthcareQuality": 1.2 } } },
@@ -192,11 +159,10 @@
     "id": "governance",
     "text": "What style of governance do you prefer?",
     "type": "single",
-    "modes": ["living", "visiting"],
     "options": [
-      { "label": "Progressive — strong social programs, liberal policies", "effects": { "multipliers": { "govProgressiveness": 1.5 }, "prefLabel": { "govProgressiveness": "progressive governance" } } },
-      { "label": "Moderate — balanced approach", "effects": { "prefLabel": { "govProgressiveness": "moderate governance" } } },
-      { "label": "Conservative — traditional values, less government", "effects": { "inversions": ["govProgressiveness"], "multipliers": { "govProgressiveness": 1.5 }, "prefLabel": { "govProgressiveness": "conservative governance" } } },
+      { "label": "Progressive — strong social programs, liberal policies", "effects": { "multipliers": { "govProgressiveness": 1.5 } } },
+      { "label": "Moderate — balanced approach", "effects": {} },
+      { "label": "Conservative — traditional values, less government", "effects": { "inversions": ["govProgressiveness"], "multipliers": { "govProgressiveness": 1.5 } } },
       { "label": "No preference", "effects": { "multipliers": { "govProgressiveness": 0.3 } } }
     ]
   },
@@ -204,42 +170,27 @@
     "id": "transparency",
     "text": "How important are government transparency and press freedom?",
     "type": "single",
-    "modes": ["living", "visiting"],
     "options": [
-      { "label": "Essential — low corruption and free press are must-haves", "effects": { "multipliers": { "corruption": 1.5, "pressFreedom": 1.5 }, "prefLabel": { "corruption": "low corruption", "pressFreedom": "press freedom" } } },
-      { "label": "Somewhat important", "effects": { "prefLabel": { "corruption": "reasonable transparency" } } },
+      { "label": "Essential — low corruption and free press are must-haves", "effects": { "multipliers": { "corruption": 1.5, "pressFreedom": 1.5 } } },
+      { "label": "Somewhat important", "effects": {} },
       { "label": "Not a priority for me", "effects": { "multipliers": { "corruption": 0.3, "pressFreedom": 0.3 } } }
-    ]
-  },
-  {
-    "id": "climatePolicy",
-    "text": "How important is government climate policy?",
-    "type": "single",
-    "modes": ["living"],
-    "options": [
-      { "label": "Very important — strong climate action is essential", "effects": { "multipliers": { "climateAction": 1.5, "fossilFuelReliance": 1.3 }, "prefLabel": { "climateAction": "strong climate action" } } },
-      { "label": "Somewhat important", "effects": { "prefLabel": { "climateAction": "moderate climate policy" } } },
-      { "label": "Not a priority — prefer economic growth focus", "effects": { "inversions": ["climateAction", "fossilFuelReliance"], "multipliers": { "climateAction": 1.3 }, "prefLabel": { "climateAction": "economic growth over climate policy" } } },
-      { "label": "No preference", "effects": { "multipliers": { "climateAction": 0.3, "fossilFuelReliance": 0.3 } } }
     ]
   },
   {
     "id": "military",
     "text": "How do you feel about military spending?",
     "type": "single",
-    "modes": ["living"],
     "options": [
-      { "label": "Prefer low military spending — prioritize other programs", "effects": { "multipliers": { "militarySpending": 1.5 }, "prefLabel": { "militarySpending": "low military spending" } } },
-      { "label": "Prefer strong military — national defense matters", "effects": { "inversions": ["militarySpending"], "multipliers": { "militarySpending": 1.5 }, "prefLabel": { "militarySpending": "strong military presence" } } },
+      { "label": "Prefer low military spending — prioritize other programs", "effects": { "multipliers": { "militarySpending": 1.5 } } },
+      { "label": "Prefer strong military — national defense matters", "effects": { "inversions": ["militarySpending"], "multipliers": { "militarySpending": 1.5 } } },
       { "label": "No preference", "effects": { "multipliers": { "militarySpending": 0.3 } } }
     ]
   },
   {
     "id": "dealbreakers",
-    "text": "Any dealbreakers? Cities scoring below 30 on these will be eliminated.",
+    "text": "Any dealbreakers? Cities scoring below 30 on these sink to the bottom of your ranking.",
     "type": "multi",
     "maxSelect": 5,
-    "modes": ["living", "visiting"],
     "options": [
       { "label": "Poor air quality", "effects": { "dealbreaker": "airQuality" } },
       { "label": "High crime", "effects": { "dealbreaker": "safety" } },
@@ -251,7 +202,6 @@
       { "label": "Slow internet", "effects": { "dealbreaker": "internetQuality" } },
       { "label": "High corruption", "effects": { "dealbreaker": "corruption" } },
       { "label": "Restricted press freedom", "effects": { "dealbreaker": "pressFreedom" } },
-      { "label": "Poor public transit", "effects": { "dealbreaker": "transitQuality" } },
       { "label": "Authoritarian government", "effects": { "dealbreaker": "govProgressiveness" } },
       { "label": "No dealbreakers", "effects": {} }
     ]
