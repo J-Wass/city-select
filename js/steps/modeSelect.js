@@ -4,12 +4,12 @@ export function render(container, onNext, onBack) {
   container.innerHTML = `
     <div class="step-content mode-select">
       <h2>How do you want to get started?</h2>
-      <p class="subtitle">Take the quiz for a personalized ranking, or compare specific cities side-by-side.</p>
+      <p class="subtitle">Take the quiz for a personalized ranking — worldwide or narrowed to a continent or country — or compare specific cities side-by-side.</p>
       <div class="mode-buttons">
         <button class="mode-btn" id="startQuizBtn">
           <span class="mode-icon">📝</span>
           <span class="mode-label">Start Quiz</span>
-          <span class="mode-desc">Rank your priorities and get your best-fit cities.</span>
+          <span class="mode-desc">Pick a continent or country (optional), rank your priorities, get your best-fit cities.</span>
         </button>
         <button class="mode-btn" id="compareCitiesBtn">
           <span class="mode-icon">⚖️</span>

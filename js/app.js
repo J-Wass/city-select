@@ -1,11 +1,12 @@
 import state from './state.js';
 import { render as renderModeSelect } from './steps/modeSelect.js';
+import { render as renderScopeSelect } from './steps/scopeSelect.js';
 import { render as renderPriorityRank } from './steps/priorityRank.js';
 import { render as renderQuiz } from './steps/quiz.js';
 import { render as renderResults } from './steps/results.js';
 
-const steps = [renderModeSelect, renderPriorityRank, renderQuiz, renderResults];
-const stepNames = ['Home', 'Priorities', 'Quiz', 'Results'];
+const steps = [renderModeSelect, renderScopeSelect, renderPriorityRank, renderQuiz, renderResults];
+const stepNames = ['Home', 'Where', 'Priorities', 'Quiz', 'Results'];
 let currentStep = 0;
 
 const appEl = document.getElementById('app');

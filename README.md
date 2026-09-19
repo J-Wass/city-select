@@ -5,9 +5,10 @@ A city recommendation tool that scores and ranks cities based on your personal p
 ## How it works
 
 1. **Start the quiz** — or jump straight to a side-by-side city comparison
-2. **Rank your priorities** — drag dimensions into the order that matters to you
-3. **Take a short quiz** — answers tune the scoring (climate preferences, career focus, budget, language, etc.)
-4. **See your results** — top 5 ranked cities with scores, strengths, and weaknesses, plus a full ranked table of all cities. Hover any score to see where the city ranks and which real source the number comes from (e.g. "Copenhagen is 63rd of 250 cities for coldest winters — source: NASA POWER")
+2. **Pick where you're looking** *(optional)* — search anywhere in the world, or narrow to one or more continents or countries
+3. **Rank your priorities** — drag dimensions into the order that matters to you
+4. **Take a short quiz** — answers tune the scoring (climate preferences, career focus, budget, language, etc.)
+5. **See your results** — top 5 ranked cities with scores, strengths, and weaknesses, plus a full ranked table of all cities. Hover any score to see where the city ranks and which real source the number comes from (e.g. "Copenhagen is 63rd of 250 cities for coldest winters — source: NASA POWER")
 
 Scoring is a weighted average across 19 dimensions (safety, cost of living, air quality, healthcare, etc.). Your priority ranking and quiz answers adjust the weights.
 
@@ -43,8 +44,10 @@ city-select/
     state.js          — global app state
     scoring.js        — weighted scoring engine
     cityMaps.js       — SVG city map thumbnails
+    geo.js            — country → continent lookup for location scoping
     steps/
       modeSelect.js   — landing: Start Quiz / Compare Cities
+      scopeSelect.js  — optional continent / country scope for the quiz
       priorityRank.js — drag-and-drop dimension ranking
       quiz.js         — preference quiz
       results.js      — results page + all-cities table
