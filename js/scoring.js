@@ -1,4 +1,29 @@
 import state from './state.js';
+import { continentOf } from './geo.js';
+
+/**
+ * Cities inside the user's optional scope (a set of continents or countries).
+ * Falls back to every city when the scope is 'all' or matches nothing.
+ */
+export function scopedCities() {
+  const { type, values } = state.scope || {};
+  if (type !== 'continent' && type !== 'country') return state.cities;
+  if (!values || values.length === 0) return state.cities;
+  const wanted = new Set(values);
+  const filtered = state.cities.filter(city =>
+    wanted.has(type === 'continent' ? continentOf(city) : city.country));
+  return filtered.length > 0 ? filtered : state.cities;
+}
+
+/**
+ * Human-readable description of the current scope, or null for worldwide.
+ */
+export function scopeLabel() {
+  const { type, values } = state.scope || {};
+  if ((type !== 'continent' && type !== 'country') || !values || values.length === 0) return null;
+  if (values.length <= 3) return values.join(', ');
+  return `${values.slice(0, 2).join(', ')} +${values.length - 2} more`;
+}
 
 /**
  * Rank multiplier based on drag-and-drop position (0-indexed).
@@ -88,7 +113,7 @@ export function calculateResults() {
 
   const scored = [];
 
-  for (const city of state.cities) {
+  for (const city of scopedCities()) {
     // --- Dealbreaker check ---
     const violatedDealbreakers = [];
     for (const dim of effects.dealbreakers) {

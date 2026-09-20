@@ -160,6 +160,147 @@ h2 {
 .mode-label { font-size: 1.2rem; font-weight: 600; }
 .mode-desc { font-size: 0.8rem; color: var(--text-muted); }
 
+/* Scope Select */
+.scope-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.scope-tab {
+  padding: 0.5rem 1rem;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: 20px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+
+.scope-tab:hover { border-color: var(--accent); color: var(--text); }
+
+.scope-tab.active {
+  border-color: var(--accent);
+  background: rgba(108,140,255,0.12);
+  color: var(--text);
+}
+
+.scope-body { min-height: 120px; }
+
+.scope-all-note {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: var(--text-muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.scope-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.5rem;
+}
+
+.scope-grid-compact {
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+}
+
+.scope-chip {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  padding: 0.8rem 0.9rem;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.scope-chip:hover {
+  border-color: var(--accent);
+  background: #1e2233;
+}
+
+.scope-chip.selected {
+  border-color: var(--accent);
+  background: rgba(108,140,255,0.12);
+}
+
+.scope-chip-icon { font-size: 1.4rem; }
+.scope-chip-label { font-size: 0.92rem; font-weight: 600; }
+.scope-chip-count { font-size: 0.72rem; color: var(--text-muted); }
+
+.scope-chip-sm {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.55rem 0.7rem;
+}
+
+.scope-chip-sm .scope-chip-label { font-size: 0.82rem; font-weight: 500; }
+
+.scope-search {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  margin-bottom: 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: 0.88rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.scope-search:focus { border-color: var(--accent); }
+
+.scope-country-list {
+  max-height: 45vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  padding-right: 0.2rem;
+}
+
+.scope-country-group { margin-bottom: 1rem; }
+
+.scope-country-group-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.scope-empty {
+  padding: 1rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.scope-summary {
+  margin-top: 0.9rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.results-scope {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+.results-scope strong { color: var(--text); }
+
 /* Priority Rank */
 .rank-actions {
   margin-bottom: 1rem;
@@ -1135,6 +1276,9 @@ h2 {
   .cmp-toolbar { flex-direction: column; }
   .cmp-selection-count { width: 100%; }
   .cmp-browser-controls { grid-template-columns: 1fr; }
+  .scope-grid { grid-template-columns: 1fr 1fr; }
+  .scope-grid-compact { grid-template-columns: 1fr; }
+  .scope-country-list { max-height: calc(100vh - 380px); }
   .rank-list {
     max-height: calc(100vh - 250px);
     overflow-y: auto;

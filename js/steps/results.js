@@ -1,4 +1,4 @@
-import { calculateResults } from '../scoring.js';
+import { calculateResults, scopedCities, scopeLabel } from '../scoring.js';
 import { getCityMapSVG } from '../cityMaps.js';
 import { dimTooltip, dimById } from '../dimTooltips.js';
 import state from '../state.js';
@@ -433,7 +433,8 @@ function dimRow(item, type, city) {
 // ─── Stat rank helpers ───────────────────────────────────────────────────────
 
 function computeStatRanks() {
-  const cities = state.cities;
+  // Ranked within the user's scope so "#3 of 42" matches the pool they searched.
+  const cities = scopedCities();
   const rankMap = arr => Object.fromEntries(arr.map((c, i) => [c.id, i + 1]));
   return {
     pop:     rankMap([...cities].sort((a, b) => b.population    - a.population)),
@@ -510,7 +511,7 @@ function buildModal(container) {
 function showCityModal(modal, result, matchRank, statRanks) {
   const city = result.city;
   const sc = city.scores;
-  const n = state.cities.length;
+  const n = scopedCities().length;
 
   // Reset scroll
   modal.querySelector('.modal-scroll').scrollTop = 0;
@@ -781,8 +782,9 @@ export function render(container, _onNext, onBack) {
   container.innerHTML = `
     <div class="step-content results">
       <h2>Your Top Cities</h2>
+      ${scopeLabel() ? `<p class="results-scope">Scoped to <strong>${escapeHtml(scopeLabel())}</strong> · ${results.length} ${results.length === 1 ? 'city' : 'cities'}</p>` : ''}
       <div class="results-list">
-        ${top5.length === 0 ? '<p class="no-results">No cities matched your criteria. Try removing some dealbreakers.</p>' : ''}
+        ${top5.length === 0 ? '<p class="no-results">No cities matched your criteria. Try removing some dealbreakers or widening your location scope.</p>' : ''}
         ${top5.map((r, i) => `
           <div class="result-card">
             <div class="result-map-col">
